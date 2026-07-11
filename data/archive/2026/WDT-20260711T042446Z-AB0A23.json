@@ -34,5 +34,21 @@
     "github_id": 26245345,
     "claimed_at": "2026-07-11T04:25:14Z"
   },
-  "links": []
+  "links": [],
+  "completion": {
+    "outcome": "done",
+    "completed_at": "2026-07-11T04:25:50Z",
+    "completed_by": {
+      "login": "ChaoWao",
+      "github_id": 26245345
+    },
+    "result": "Real GitHub add, dep-check, claim, test, and archive lifecycle completed.",
+    "acceptance_results": [
+      {
+        "criterion_id": "AC-1",
+        "status": "passed",
+        "evidence": "python3 -m unittest discover -s tests -v: 20 tests passed in 1.689s"
+      }
+    ]
+  }
 }
