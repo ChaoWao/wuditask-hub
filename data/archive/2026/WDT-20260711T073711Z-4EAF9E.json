@@ -52,5 +52,31 @@
   },
   "links": [
     "https://github.com/ChaoWao/wuditask/issues/1"
-  ]
+  ],
+  "completion": {
+    "outcome": "cancelled",
+    "completed_at": "2026-07-11T07:38:57Z",
+    "completed_by": {
+      "login": "ChaoWao",
+      "github_id": 26245345
+    },
+    "result": "Superseded after user clarification: direct WudiTask maintenance must not be represented as a WudiTask task or automatic GitHub Issue.",
+    "acceptance_results": [
+      {
+        "criterion_id": "AC-1",
+        "status": "skipped",
+        "evidence": "Superseded after user clarification: direct WudiTask maintenance must not be represented as a WudiTask task or automatic GitHub Issue."
+      },
+      {
+        "criterion_id": "AC-2",
+        "status": "skipped",
+        "evidence": "Superseded after user clarification: direct WudiTask maintenance must not be represented as a WudiTask task or automatic GitHub Issue."
+      },
+      {
+        "criterion_id": "AC-3",
+        "status": "skipped",
+        "evidence": "Superseded after user clarification: direct WudiTask maintenance must not be represented as a WudiTask task or automatic GitHub Issue."
+      }
+    ]
+  }
 }
