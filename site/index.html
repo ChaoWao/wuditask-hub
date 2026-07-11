@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#172126">
+    <title>WudiTask</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">W</span>
+        <div>
+          <h1>WudiTask</h1>
+          <p>Distributed work queue</p>
+        </div>
+      </div>
+      <div class="sync-area">
+        <span id="sync-status" class="sync-status" aria-live="polite">Loading</span>
+        <a id="hub-link" class="hub-link" hidden rel="noreferrer">GitHub</a>
+        <button id="refresh" class="button" type="button">Refresh</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="summary-band" aria-label="Task summary">
+        <div class="summary-inner">
+          <div class="metric">
+            <span id="count-open" class="metric-value">0</span>
+            <span class="metric-label">Open</span>
+          </div>
+          <div class="metric metric-ready">
+            <span id="count-ready" class="metric-value">0</span>
+            <span class="metric-label">Ready</span>
+          </div>
+          <div class="metric metric-progress">
+            <span id="count-progress" class="metric-value">0</span>
+            <span class="metric-label">In progress</span>
+          </div>
+          <div class="metric metric-blocked">
+            <span id="count-blocked" class="metric-value">0</span>
+            <span class="metric-label">Blocked</span>
+          </div>
+          <div class="metric">
+            <span id="count-archived" class="metric-value">0</span>
+            <span class="metric-label">Archived</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <div class="toolbar">
+          <div class="view-tabs" role="tablist" aria-label="Task view">
+            <button class="view-tab is-active" type="button" role="tab" aria-selected="true" data-view="open">
+              Open
+            </button>
+            <button class="view-tab" type="button" role="tab" aria-selected="false" data-view="archive">
+              Archive
+            </button>
+          </div>
+          <div class="filters">
+            <label class="search-field">
+              <span class="visually-hidden">Search tasks</span>
+              <input id="search" type="search" placeholder="Search tasks" autocomplete="off">
+            </label>
+            <label>
+              <span class="visually-hidden">Repository</span>
+              <select id="repo-filter" aria-label="Repository">
+                <option value="">All repositories</option>
+              </select>
+            </label>
+            <label>
+              <span class="visually-hidden">State</span>
+              <select id="state-filter" aria-label="State">
+                <option value="">All states</option>
+                <option value="ready">Ready</option>
+                <option value="in_progress">In progress</option>
+                <option value="blocked">Blocked</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="list-heading" aria-hidden="true">
+          <span>Priority</span>
+          <span>Task</span>
+          <span>Repository</span>
+          <span>Owner</span>
+          <span>State</span>
+        </div>
+        <div id="task-list" class="task-list" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden>
+          <strong>No matching tasks</strong>
+          <span>Try another repository, state, or search.</span>
+        </div>
+        <div id="error-state" class="error-state" hidden></div>
+      </section>
+    </main>
+
+    <footer>
+      <span id="generated-at">Snapshot not loaded</span>
+      <span>Read-only GitHub Pages view</span>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

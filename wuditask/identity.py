@@ -1,0 +1,86 @@
+from __future__ import annotations
+
+import json
+import os
+import shutil
+import subprocess
+from pathlib import Path
+
+from .errors import WudiTaskError
+from .model import Identity
+from .util import repo_from_remote
+
+
+def _parse_actor(value: str) -> Identity:
+    login, separator, raw_id = value.partition(":")
+    if not separator or not login.strip():
+        raise WudiTaskError(
+            "invalid_actor",
+            "Actor override must use login:numeric-id form.",
+            details={"value": value},
+        )
+    try:
+        github_id = int(raw_id)
+    except ValueError as exc:
+        raise WudiTaskError(
+            "invalid_actor",
+            "Actor override must use login:numeric-id form.",
+            details={"value": value},
+        ) from exc
+    if github_id <= 0:
+        raise WudiTaskError("invalid_actor", "GitHub ID must be positive.")
+    return Identity(login=login.strip(), github_id=github_id)
+
+
+def resolve_identity(actor_override: str | None = None) -> Identity:
+    override = actor_override or os.environ.get("WUDITASK_ACTOR")
+    if override:
+        return _parse_actor(override)
+    if shutil.which("gh") is None:
+        raise WudiTaskError(
+            "gh_not_found",
+            "GitHub CLI is required to identify the human owner.",
+            details={"action": "Install gh and run gh auth login, then retry."},
+        )
+    process = subprocess.run(
+        ["gh", "api", "user"],
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if process.returncode != 0:
+        raise WudiTaskError(
+            "gh_identity_failed",
+            "Could not read the authenticated GitHub identity.",
+            details={
+                "stderr": process.stderr.strip(),
+                "action": "Run gh auth login and retry.",
+            },
+        )
+    try:
+        payload = json.loads(process.stdout)
+        login = payload["login"]
+        github_id = payload["id"]
+    except (json.JSONDecodeError, KeyError, TypeError) as exc:
+        raise WudiTaskError(
+            "gh_identity_invalid",
+            "GitHub CLI returned an invalid user record.",
+        ) from exc
+    if not isinstance(login, str) or not login or not isinstance(github_id, int):
+        raise WudiTaskError(
+            "gh_identity_invalid", "GitHub CLI returned an invalid user record."
+        )
+    return Identity(login=login, github_id=github_id)
+
+
+def detect_current_repo(cwd: Path | None = None) -> str | None:
+    process = subprocess.run(
+        ["git", "remote", "get-url", "origin"],
+        cwd=cwd or Path.cwd(),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if process.returncode != 0:
+        return None
+    return repo_from_remote(process.stdout.strip())
