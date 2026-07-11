@@ -1,7 +1,3 @@
-__pycache__/
-*.py[cod]
 .DS_Store
 .wuditask.lock
 _site/
-.coverage
-htmlcov/

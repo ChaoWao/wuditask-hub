@@ -6,15 +6,7 @@ on:
       - main
     paths:
       - "data/**"
-      - "site/**"
-      - "schemas/**"
-      - "wuditask/**"
-      - "tools/wuditask.py"
-      - "tests/**"
-      - ".agents/skills/**"
-      - "README.md"
-      - "docs/**"
-      - "pyproject.toml"
+      - "hub.json"
       - ".github/workflows/pages.yml"
   schedule:
     - cron: "17 * * * *"
@@ -34,18 +26,24 @@ jobs:
     if: github.event_name != 'schedule' || vars.WUDITASK_PAGES_ENABLED == 'true'
     runs-on: ubuntu-latest
     steps:
-      - name: Check out task hub
+      - name: Check out task Hub
         uses: actions/checkout@v6
+        with:
+          path: hub
+      - name: Check out pinned WudiTask tool
+        uses: actions/checkout@v6
+        with:
+          repository: ChaoWao/wuditask
+          ref: bf8caeb73cbbd80e31ebb684702bd93178f6e8e7
+          path: tool
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Validate task data
-        run: python3 tools/wuditask.py --local --json validate
-      - name: Run tests
-        run: python3 -m unittest discover -s tests -v
+        run: python3 tool/tools/wuditask.py --hub hub --local --json validate
       - name: Build static dashboard
-        run: python3 tools/wuditask.py --local --json build-site --output _site
+        run: python3 tool/tools/wuditask.py --hub hub --local --json build-site --output "$GITHUB_WORKSPACE/_site"
       - name: Configure Pages
         if: vars.WUDITASK_PAGES_ENABLED == 'true'
         uses: actions/configure-pages@v5
