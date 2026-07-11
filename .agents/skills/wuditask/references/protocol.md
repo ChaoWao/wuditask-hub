@@ -28,7 +28,8 @@ For a large add request, pass `--spec <file>` or `--spec -`. A spec contains tit
 ## Read commands
 
 ```text
-help [workflow|add|execute|dep-check|archive|release|list|show|install]
+help [workflow|add|execute|dep-check|archive|release|list|show|install|selfupdate]
+selfupdate [--check]
 dep-check [TASK_ID]
 list [--scope open|archive|all] [--repo owner/name]
 show TASK_ID
@@ -36,6 +37,8 @@ validate
 ```
 
 `help` is identity-free and read-only. Agent invocations are `$wuditask help [topic]` in Codex and `/wuditask help [topic]` in Claude.
+
+`selfupdate --check` fetches and reports status without merging. `selfupdate` requires a clean installed clone, validates and tests a temporary candidate clone, and then performs only `merge --ff-only`. It never stashes, resets, rebases, or reinstalls.
 
 ## Error handling
 
@@ -50,5 +53,8 @@ validate
 | `insufficient_archive_evidence` | Run/check missing criteria and add evidence |
 | `owner_mismatch` | Stop; the authenticated human does not own the task |
 | `invalid_task_data` | Report exact issue paths; maintainer must repair data |
+| `selfupdate_dirty_worktree` | Stop and show local changes; never auto-stash or discard |
+| `selfupdate_local_ahead` / `selfupdate_diverged` | Stop; resolve Git history explicitly |
+| `selfupdate_candidate_failed` | Keep installed version unchanged and report failed verification |
 
 Remote mutation completion requires both `confirmed: true` and `sync.confirmed: true`.

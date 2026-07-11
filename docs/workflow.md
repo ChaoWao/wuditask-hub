@@ -53,6 +53,12 @@ python3 tools/wuditask.py --json install
 
 安装结果只做路径注册与 symlink，不执行 pip/npm 安装，也不复制 skill。clone 保持原路径时，`git pull` 会立即更新 Codex、Claude 和 CLI，无需重新 install；clone 移动后才必须重新运行。若目标 skill 路径已有其他内容，默认停止；只有用户确认后才使用 `--replace`，旧内容会改名保留为 backup。
 
+### 更新 WudiTask 本体
+
+`/wuditask selfupdate`（Codex 为 `$wuditask selfupdate`）用于升级已安装 clone。CLI 先 fetch 并检查 Git 关系；只有 worktree 干净且本地可 fast-forward 时，才在临时 clone 中校验候选数据并运行完整测试，随后 `merge --ff-only`。dirty、local-ahead、diverged 或候选测试失败都保持当前版本不变，且不会自动 stash/reset/rebase。
+
+若用户在另一个工作仓发现 WudiTask 缺陷，使用 `/wuditask selfupdate fix <问题>`。agent 将原仓现场保持不动，在 Task Hub 中添加并领取一个面向 WudiTask 仓库的维护任务，然后在 `~/.wuditask/worktrees/<task-id>` 隔离实现。修复通过测试并普通 push 到 main 后，agent 更新安装 clone、带 evidence 归档维护任务、清理 worktree，再返回原仓继续原任务。
+
 ## 2. 添加任务
 
 用户可以在任意工作仓库中告诉 agent：

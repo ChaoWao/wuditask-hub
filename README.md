@@ -50,7 +50,7 @@ install 创建的是符号链接，不复制 skill 或 CLI：
 
 - `~/.agents/skills/wuditask` 与 `~/.claude/skills/wuditask` 指向当前 clone。
 - `~/.local/bin/wuditask` 指向当前 clone 的 `tools/wuditask.py`。
-- clone 保持原路径时，`git pull` 后直接生效，无需重新 install。
+- clone 保持原路径时，`git pull` 后直接生效；更推荐使用带候选验证的 `/wuditask selfupdate`。两者都无需重新 install。
 - 若一个长期运行的 agent 会话仍缓存旧 skill，重新打开会话即可，不需要 reinstall。
 - clone 被移动或删除时，重新运行 `$wuditask-install` 或 `/wuditask-install` 修复绝对路径。
 
@@ -63,6 +63,19 @@ CLI:    wuditask help
 ```
 
 也可以查看单项，例如 `/wuditask help archive` 或 `wuditask help dep-check`。
+
+安全检查并更新当前安装：
+
+```text
+Claude: /wuditask selfupdate
+Codex:  $wuditask selfupdate
+CLI:    wuditask selfupdate --check
+        wuditask selfupdate
+```
+
+`--check` 只 fetch 和报告；实际更新要求 clone 干净，先在临时 clone 中通过数据校验与完整测试，再执行 `merge --ff-only`。它不会自动 stash、reset、rebase，也不需要 reinstall。
+
+在其他工作仓发现 WudiTask 自身需要修改时，使用 `/wuditask selfupdate fix "问题描述"`（Codex 使用 `$wuditask selfupdate fix ...`）。skill 会在 WudiTask 中创建维护任务，并使用 `~/.wuditask/worktrees/<task-id>` 隔离开发，完成后普通 push、更新安装 clone、归档维护任务，再返回原仓。
 
 ## 日常命令
 

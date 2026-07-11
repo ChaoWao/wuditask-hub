@@ -110,6 +110,20 @@ class CliTests(unittest.TestCase):
             "/wuditask help [topic]", payload["agent_invocation"]["claude"]
         )
 
+        selfupdate = subprocess.run(
+            [sys.executable, str(TOOL), "--json", "help", "selfupdate"],
+            cwd=ROOT,
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(0, selfupdate.returncode, selfupdate.stderr)
+        selfupdate_payload = json.loads(selfupdate.stdout)
+        self.assertEqual(
+            "/wuditask selfupdate fix <request>",
+            selfupdate_payload["commands"][0]["agent_usage"]["fix"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -13,6 +13,7 @@ from .gitops import GitCoordinator
 from .identity import detect_current_repo, resolve_identity
 from .install import install_agent_access
 from .repository import TaskRepository
+from .selfupdate import self_update
 from .site_builder import build_site
 from .util import (
     TASK_ID_RE,
@@ -57,6 +58,14 @@ HELP_COMMANDS = {
     "install": {
         "purpose": "Register this clone through symlinks for Codex and Claude.",
         "usage": "wuditask install [--home PATH] [--replace]",
+    },
+    "selfupdate": {
+        "purpose": "Safely verify and fast-forward the installed WudiTask clone.",
+        "usage": "wuditask selfupdate [--check]",
+        "agent_usage": {
+            "update": "/wuditask selfupdate",
+            "fix": "/wuditask selfupdate fix <request>",
+        },
     },
 }
 
@@ -162,6 +171,15 @@ def _parser() -> argparse.ArgumentParser:
     )
     install.add_argument("--home", type=Path)
     install.add_argument("--replace", action="store_true")
+
+    selfupdate = commands.add_parser(
+        "selfupdate", help="Safely fast-forward this WudiTask clone."
+    )
+    selfupdate.add_argument(
+        "--check",
+        action="store_true",
+        help="Fetch and report update state without changing the clone.",
+    )
 
     help_command = commands.add_parser(
         "help", help="Show workflow and command examples."
@@ -391,6 +409,8 @@ def _text(result: dict[str, Any]) -> str:
         for command in result["commands"]:
             lines.append(f"  {command['name']}: {command['purpose']}")
             lines.append(f"    {command['usage']}")
+            for mode, invocation in command.get("agent_usage", {}).items():
+                lines.append(f"    {mode}: {invocation}")
         lines.extend(
             [
                 "",
@@ -447,6 +467,13 @@ def run(args: argparse.Namespace, hub_root: Path) -> dict[str, Any]:
     hub_root = (args.hub or hub_root).expanduser().resolve()
     if args.command == "help":
         return _help(args.topic)
+    if args.command == "selfupdate":
+        if args.local:
+            raise WudiTaskError(
+                "selfupdate_local_mode_invalid",
+                "Self-update synchronizes with origin and cannot use --local.",
+            )
+        return self_update(hub_root, check_only=args.check)
     if args.command == "install":
         return install_agent_access(
             hub_root,
