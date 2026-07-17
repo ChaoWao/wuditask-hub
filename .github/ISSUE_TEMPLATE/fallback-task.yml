@@ -1,7 +1,7 @@
-name: Fallback task
+name: Canonical fallback task
 description: >-
-  Describe work here only when its execution repository cannot host the
-  canonical Issue.
+  Create the canonical task here only when its execution repository cannot
+  host the Issue or PR.
 title: "[Fallback Task] "
 labels:
   - wuditask-fallback
@@ -9,13 +9,19 @@ body:
   - type: markdown
     attributes:
       value: |
-        Prefer an Issue in the execution repository. Use this form only when
-        that repository cannot host the Issue or when cross-repository work has
-        no suitable single owning repository.
+        Prefer a matching pull request or Issue in the execution repository.
+        A PR may be the task itself; do not create a wrapping Issue for it. Use
+        this form only when the execution repository cannot host the canonical
+        description or cross-repository work has no suitable owning repository.
 
         This Issue is the canonical work description. A separate WudiTask entry
-        supplies queue priority, dependencies, its execution lease, and
-        verification evidence.
+        supplies queue priority, cross-task dependencies, active-agent
+        coordination, and the archived result. It does not copy this Issue's
+        title, narrative, or acceptance criteria.
+
+        GitHub assignment records human responsibility; it does not start an
+        agent. Agent execution begins only after an ordinary, non-force Hub push
+        confirms a WudiTask active run.
 
   - type: input
     id: execution_repository
@@ -40,10 +46,10 @@ body:
   - type: textarea
     id: fallback_reason
     attributes:
-      label: Why this work cannot use an Issue in the execution repository
+      label: Why this work cannot use an Issue or PR in the execution repository
       description: >-
         Explain the concrete constraint, such as disabled Issues, missing
-        permission, or no suitable single owner for cross-repository work.
+        permission, or no suitable owning repository for cross-repository work.
       placeholder: The primary execution repository has Issues disabled.
     validations:
       required: true
@@ -91,8 +97,9 @@ body:
     attributes:
       label: Dependencies and blockers
       description: >-
-        Link required Issues, pull requests, or WudiTask IDs. Write "None" when
-        the work has no known dependency.
+        Link required Issues, pull requests, or WudiTask IDs. The matching
+        WudiTask dependencies must also be registered in the Hub. Write "None"
+        when the work has no known dependency.
       placeholder: None
     validations:
       required: true
@@ -117,4 +124,6 @@ body:
         For one completing pull request, use
         `Closes ChaoWao/wuditask-hub#<issue-number>`. For an umbrella task, use
         `Refs ChaoWao/wuditask-hub#<issue-number>` on every pull request and
-        close this Issue only after final acceptance verification.
+        close this Issue only after final acceptance verification. Only authors
+        of closing-linked pull requests become owners; ordinary references do
+        not grant ownership.

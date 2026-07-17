@@ -1,171 +1,189 @@
 # WudiTask Hub
 
-This repository is the shared task-data Hub for
-[WudiTask](https://github.com/ChaoWao/wuditask). It also provides a fallback
-GitHub Issue tracker for work whose execution repository cannot host the
-canonical Issue. It intentionally contains no CLI, agent skills, schemas,
-tests, or dashboard source.
+This repository is the shared coordination Hub for
+[WudiTask](https://github.com/ChaoWao/wuditask). The tool and Hub are separate
+repositories: the tool owns the CLI, schemas, skills, tests, and Pages source;
+this repository owns only task coordination data, fallback Issues, and the
+workflow that validates and publishes the read-only site.
 
-The current tree contains only:
+The current tree contains:
 
-- `hub.json`: the task schema and tool API contract versions;
-- `data/open/`: open and claimed tasks;
-- `data/archive/`: retained outcomes for ordinary tasks;
+- `hub.json`: task schema and tool API versions;
+- `data/open/`: live coordination records;
+- `data/archive/`: retained task outcomes;
 - `data/deletions/`: durable receipts for explicitly deleted erroneous archives;
-- `.github/ISSUE_TEMPLATE/`: the fallback task Issue form;
-- `.github/workflows/pages.yml`: validation and read-only Pages deployment.
+- `.github/ISSUE_TEMPLATE/`: the canonical fallback Issue form;
+- `.github/workflows/pages.yml`: validation and Pages deployment.
 
-## Canonical task source
+## Source of truth
 
-A WudiTask keeps the repository where work executes separate from the source
-that describes the work:
+Every WudiTask has a canonical GitHub Issue or pull request. A pull request may
+be the task itself; WudiTask never creates a wrapping Issue merely because only
+a PR exists. Narrative, scope, constraints, acceptance criteria, discussion,
+delivery state, reviews, checks, and human assignment remain on that canonical
+GitHub object. WudiTask does not accept a local text source.
 
-- `repo` is the execution repository in `owner/name` form;
-- `source` is the canonical GitHub Issue, GitHub pull request, or last-resort
-  text description;
-- `links` contains auxiliary references and is not the canonical source.
+Use a source in this order:
 
-For GitHub-backed work, GitHub owns the description, discussion, assignees,
-linked pull requests, reviews, checks, and delivery state. WudiTask owns queue
-priority, cross-repository dependencies, the exclusive execution lease in
-`claim`, acceptance criteria, verification evidence, and the archived outcome.
-Closing a GitHub Issue therefore does not by itself mark a WudiTask done.
-Tasks have no separate `owner` field: the GitHub assignee expresses human
-responsibility, while `claim` only prevents concurrent execution.
+1. Reuse a matching PR in the execution repository.
+2. Reuse or create an Issue in the execution repository.
+3. If that repository cannot host the description, create a fallback Issue in
+   this Hub and record the concrete reason.
 
-Choose a source in this order:
+The Hub task record is deliberately small. It stores the execution repository,
+canonical source pointer, creator login, priority, cross-task dependencies, and
+current `active_agents`. An archive adds the outcome, result, evidence, and
+participants. It does not duplicate the GitHub title, body, or acceptance
+criteria.
 
-1. Use an Issue or pull request in the execution repository whenever that
-   repository can host the work.
-2. Use a WudiTask Hub Issue when the execution repository has Issues disabled,
-   the requester cannot create an Issue there, or cross-repository work has no
-   suitable single owning repository.
-3. Use a text source only when neither the execution repository nor this Hub
-   can provide a GitHub Issue or pull request.
-
-When `source.repo` differs from the task's execution `repo`, `fallback_reason`
-is required. A Hub-backed task therefore resembles:
+A fallback task looks like this:
 
 ```json
 {
+  "schema_version": 3,
+  "id": "WDT-20260711T120000Z-A1B2C3",
   "repo": "owner/execution-repository",
   "source": {
     "kind": "github_issue_fallback",
     "repo": "ChaoWao/wuditask-hub",
     "number": 42,
     "fallback_reason": "The execution repository has Issues disabled."
-  }
-}
-```
-
-The last-resort text form records why no GitHub source is available:
-
-```json
-{
-  "source": {
-    "kind": "text",
-    "reason": "Neither the execution repository nor the Hub can host an Issue."
-  }
+  },
+  "created_by": "alice",
+  "priority": "P1",
+  "created_at": "2026-07-11T12:00:00Z",
+  "dependencies": [],
+  "active_agents": []
 }
 ```
 
 Use the
-[Fallback task Issue form](../../issues/new?template=fallback-task.yml) to
-capture the execution repository, fallback reason, goal, context, and
-acceptance criteria before adding the WudiTask queue entry.
+[Fallback task form](../../issues/new?template=fallback-task.yml) to write the
+complete task contract before adding its Hub entry.
 
-## Linking implementation pull requests
+## Owners, assignment, and execution
 
-For one pull request that completes a Hub Issue, put the fully qualified
-closing reference in the implementation pull request body:
+Owners are derived live from GitHub and may contain multiple people:
+
+- a PR is owned by its author and assignees;
+- an Issue is owned by its assignees and the authors of closing-linked PRs;
+- an ordinary mention or `Refs` link does not create an owner, and a closed,
+  unmerged PR no longer contributes an owner.
+
+GitHub assignment and agent execution are intentionally separate. `assign` and
+`unassign` only add or remove canonical-source assignees; they do not write Hub
+coordination state or start another user's agent. Assignment is useful for
+responsibility and discovery but is not a distributed lock.
+
+`execute` starts an agent by adding a `{login, run_id}` entry through an
+ordinary, non-force Hub push. That confirmed push is the atomic execution
+boundary. Different logins may execute the same task concurrently, while one
+login may have at most one active run on a task. The opaque `run_id` prevents a
+stale session from releasing or archiving a newer run under the same login.
+
+Without a task ID, execute first selects a ready, idle task assigned to the
+current login, then a ready unowned task. It never automatically adopts a task
+owned only by other people. An explicit task ID means the user chose to join:
+if needed, execute first adds the current login as a co-assignee without
+removing existing owners, confirms that GitHub transaction, and then starts the
+separate Hub transaction. A successful assignment is not rolled back if the
+Hub start later fails.
+
+`release` removes only the authenticated login's exact matching `run_id`; it
+does not unassign GitHub or stop another login. `unassign` rejects a login that
+still has an active run. Archiving an active task requires the caller's exact
+run and clears all active entries while preserving them as participants.
+`done` always uses this active-run path. If no agents are active, only the task
+creator may archive an explicitly terminal `failed` or `cancelled` result, and
+that command must omit `run_id`; stale run IDs are rejected rather than
+ignored.
+
+## Read and lifecycle workflow
+
+`wuditask check [TASK_ID]` is the single comprehensive read command. With an ID
+it checks one task; without an ID it refreshes all current tasks. It reports
+dependency readiness, owners, active agents, pull requests, reviews, checks,
+delivery state, and coordination drift. The former `dep-check` and `reconcile`
+commands do not exist and have no compatibility aliases.
+
+GitHub completion alone does not unblock downstream work. A task only satisfies
+a dependency after its source reaches a compatible terminal state and
+WudiTask archives it as `done` with non-empty verification evidence. `failed`
+and `cancelled` preserve a concrete terminal result but do not satisfy
+dependents.
+
+The standard lifecycle is:
+
+1. Write the complete canonical Issue or PR.
+2. Add its minimal Hub entry and dependencies.
+3. Assign people on GitHub when responsibility is known.
+4. Run `check`, then `execute`; start work only after the Hub push is confirmed.
+5. Continue to use the canonical source for discussion and delivery.
+6. `release` an abandoned run, or archive the terminal result with evidence.
+
+Task mutations must use WudiTask. The Hub default branch must reject force
+pushes and deletion. Every coordination mutation uses an ordinary push; the
+tool never force-pushes this repository.
+
+## Pages
+
+The generated GitHub Pages site has four top-level pages. Desktop navigation
+places the explanatory pages on the left and operational pages on the right:
+
+- **Workflow** (left): ownership, assignment, execution, checking, and archive;
+- **Join us** (left): installation and new-machine setup;
+- **Tasks** (right): live queue, owners, active-agent logins, and delivery;
+- **Dependency graph** (right): all repositories or one repository, with a
+  distinct color per execution repository and Issue/PR numbers on nodes.
+
+Pages never publishes `run_id`. Its snapshot may publish canonical Issue/PR
+body, owner logins, delivery links, reviews, checks, and archive evidence, so do
+not put secrets in task sources. Private sources require a
+`WUDITASK_GITHUB_TOKEN` secret with only the read access needed for their
+repositories. External repository events cannot trigger this Hub workflow, so
+the hourly schedule refreshes their live state. Hub-local Issue and PR events
+refresh immediately. Pull-request-target runs execute the default-branch
+workflow and check out the default-branch Hub snapshot, never PR code or a PR
+merge ref.
+
+## Linking fallback work
+
+A PR that completely delivers a fallback Issue should use a fully qualified
+closing reference:
 
 ```text
 Closes ChaoWao/wuditask-hub#42
 ```
 
-GitHub closes the Hub Issue when that pull request is merged into its default
-branch. WudiTask still requires its own acceptance evidence before the task is
-archived as done.
-
-For an umbrella Hub Issue completed by multiple pull requests, do not use a
-closing keyword on the individual pull requests. Reference the Issue from each
-pull request instead:
+For an umbrella Issue delivered by several PRs, use ordinary references on the
+intermediate PRs and close the Issue only after every acceptance condition is
+met:
 
 ```text
 Refs ChaoWao/wuditask-hub#42
 ```
 
-Close the umbrella Issue only after all required pull requests have landed and
-the Issue's acceptance criteria have been verified. This prevents the first
-merged pull request from reporting the overall work as complete.
-
-## Issue and task-data isolation
-
-GitHub stores Issues outside the Git branch. Creating, assigning, commenting
-on, or closing a Hub Issue does not modify `hub.json`, `data/open/`,
-`data/archive/`, or the `main` branch, and therefore does not contend with
-WudiTask task-data pushes. The Hub Issue is the canonical narrative; the task
-JSON remains the scheduling and verification record.
-
-## Pages visibility and token scope
-
-The generated read-only site has three views:
-
-- **Tasks** shows the queue and GitHub delivery state.
-- **Dependencies** combines open and archived tasks into a dependency DAG. The
-  all-repositories view preserves cross-repository edges and assigns each
-  execution repository a distinct color. Selecting one repository shows only
-  that repository's tasks and internal edges. Nodes use the canonical Issue or
-  pull-request number as their primary label; text-only tasks use the complete
-  WudiTask ID.
-- **Install** renders the tool repository's canonical `site/install.md` guide;
-  the artifact also publishes the Markdown source directly.
-
-The generated Pages snapshot includes canonical source repositories and URLs,
-GitHub assignees, closing pull-request authors and URLs, review/check summaries,
-delivery timestamps, and query errors, in addition to the task title, goal,
-context, claim identity, and acceptance evidence. Treat all of that data as
-visible to every Pages reader. Do not publish sensitive task data, and use a
-private or access-controlled Pages deployment when repository visibility
-requires it.
-
-The default `github.token` is sufficient for public sources. Private
-cross-repository sources require a `WUDITASK_GITHUB_TOKEN` secret with the
-minimum read access needed for repository metadata, Issues, pull requests,
-checks, and commit statuses. The workflow never uses that token to mutate
-Issues, pull requests, or task data.
-
-Task mutations must go through the WudiTask CLI. The Hub branch accepts
-ordinary pushes because a confirmed push is the task-claim synchronization
-point. Force pushes and default-branch deletion should remain disabled.
+Only closing-linked PR authors become Issue owners.
 
 ## Erroneous archived records
 
-Ordinary `done`, `failed`, and `cancelled` outcomes remain in `data/archive/`.
-Only when a user explicitly identifies an archived record itself as mistaken,
-duplicated, or test data may the dedicated `wuditask delete` workflow remove
-it. The CLI requires the configured remote Hub, a concrete reason, exact task
-IDs, and a complete batch with no reverse dependency from any task outside the
-batch. It never force-pushes.
-
-One Hub commit removes the archived records and writes a durable receipt under
-`data/deletions/`. The receipt records the sorted task-ID batch, reason,
-verified GitHub identity, and UTC time. Its deterministic ID lets an identical
-retry confirm the operation, while a different actor or reason cannot claim
-the same deletion. Receipt-covered task IDs are permanently reserved and
-cannot be recreated, preventing ABA ambiguity.
-
-Deleting a Hub archive does not close, reopen, assign, or otherwise change its
-canonical GitHub Issue or pull request. Git history, existing clones, and
-already published Pages artifacts can still contain the original task, so
-this workflow is not privacy or secret erasure.
+Normal `done`, `failed`, and `cancelled` records remain in `data/archive/`.
+`wuditask delete` is reserved for explicitly identified mistaken, duplicate, or
+test archives. It rejects incomplete batches and reverse dependencies, removes
+the records in one ordinary Hub commit, and writes a deterministic receipt.
+Receipt-covered task IDs stay reserved permanently. Deletion does not change
+GitHub or erase Git history, old clones, or old Pages artifacts.
 
 ## Installation
 
-Install the separate tool repository and register this remote:
+Clone the separate tool repository to a stable path, then register this Hub:
 
 ```bash
 python3 /path/to/wuditask/tools/wuditask.py --json install \
   --hub-remote https://github.com/ChaoWao/wuditask-hub.git \
   --hub-branch main
 ```
+
+The installer keeps a rebuildable Hub cache under
+`${XDG_CACHE_HOME:-$HOME/.cache}/wuditask`; it does not use a disposable clone
+as the task source of truth.

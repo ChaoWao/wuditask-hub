@@ -12,6 +12,17 @@ on:
     - cron: "17 * * * *"
   issues:
     types: [opened, edited, assigned, unassigned, closed, reopened]
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - assigned
+      - unassigned
+      - ready_for_review
+      - converted_to_draft
+      - closed
+      - reopened
   workflow_dispatch:
 
 permissions:
@@ -37,12 +48,15 @@ jobs:
       - name: Check out task Hub
         uses: actions/checkout@v6
         with:
+          # Pages builds only the committed default-branch Hub snapshot.
+          ref: ${{ github.event.repository.default_branch }}
           path: hub
+          persist-credentials: false
       - name: Check out pinned WudiTask tool
         uses: actions/checkout@v6
         with:
           repository: ChaoWao/wuditask
-          ref: 30b834add8af47f04edf4dd76ea8ee980377d4aa
+          ref: 7717b8ae7dcd0c2d3cfa212eab4d946ee34873b3
           path: tool
       - name: Set up Python
         uses: actions/setup-python@v6

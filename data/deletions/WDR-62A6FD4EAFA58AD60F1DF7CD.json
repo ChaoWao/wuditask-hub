@@ -1,14 +1,11 @@
 {
-  "receipt_version": 1,
-  "id": "WDR-2D3A629E57CA8EE1E2A4C183",
+  "receipt_version": 2,
+  "id": "WDR-62A6FD4EAFA58AD60F1DF7CD",
   "task_ids": [
     "WDT-20260711T042446Z-AB0A23",
     "WDT-20260711T073711Z-4EAF9E"
   ],
   "reason": "These records are a lifecycle smoke test and a superseded maintenance task that were mistakenly retained as shared WudiTasks.",
-  "deleted_by": {
-    "login": "ChaoWao",
-    "github_id": 26245345
-  },
+  "deleted_by": "ChaoWao",
   "deleted_at": "2026-07-17T02:05:22Z"
 }

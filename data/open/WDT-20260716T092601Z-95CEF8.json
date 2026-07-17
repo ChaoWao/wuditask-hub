@@ -1,61 +1,17 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "id": "WDT-20260716T092601Z-95CEF8",
-  "title": "Reduce redundant WAIT edges with bounded reachability bitmap (#1376)",
   "repo": "hw-native-sys/simpler",
   "source": {
     "kind": "github_issue",
     "repo": "hw-native-sys/simpler",
     "number": 1376
   },
-  "created_by": {
-    "login": "ChaoWao",
-    "github_id": 26245345
-  },
+  "created_by": "ChaoWao",
   "priority": "P2",
   "created_at": "2026-07-16T09:26:01Z",
-  "goal": "Implement order-independent bounded WAIT transitive reduction using recent-ancestor bitmaps, then select BL from measured 64/128/256 coverage and runtime cost.",
-  "context": [
-    "Blocked by the WudiTask for #1375. Reduce WAIT only; preserve RETAIN-only relations and OR edge flags before reduction.",
-    "Use a global submit sequence for cross-ring ordering, validate task generation before bitmap reads, and conservatively retain out-of-window candidates."
-  ],
-  "acceptance_criteria": [
-    {
-      "id": "AC-1",
-      "description": "For in-window DAGs, the online two-pass bitmap result matches full WAIT reachability; redundant WAIT is removed while WAIT|RETAIN becomes RETAIN-only, independent of candidate discovery order.",
-      "verification": {
-        "type": "command",
-        "value": "cmake -B tests/ut/cpp/build -S tests/ut/cpp && cmake --build tests/ut/cpp/build && ctest --test-dir tests/ut/cpp/build -LE requires_hardware --output-on-failure"
-      }
-    },
-    {
-      "id": "AC-2",
-      "description": "Same-ring, cross-ring, d==BL, d>BL, duplicate-source, slot-reuse, stale-generation, and sequence-wrap boundaries are covered without false-positive WAIT removal.",
-      "verification": {
-        "type": "command",
-        "value": "pytest examples tests/st --platform a2a3sim --runtime tensormap_and_ringbuffer"
-      }
-    },
-    {
-      "id": "AC-3",
-      "description": "BL=64, 128, and 256 coverage, misses, WAIT-to-RETAIN conversions, edge savings, and Orch/Effective timing are compared and the production BL is justified with recorded evidence.",
-      "verification": {
-        "type": "manual",
-        "value": "Review the coverage and benchmark table attached to Issue #1376 or its implementation PR."
-      }
-    },
-    {
-      "id": "AC-4",
-      "description": "a2a3 and a5 tensormap_and_ringbuffer implementations remain behaviorally aligned.",
-      "verification": {
-        "type": "command",
-        "value": "pytest examples tests/st --platform a5sim --runtime tensormap_and_ringbuffer"
-      }
-    }
-  ],
   "dependencies": [
     "WDT-20260716T092537Z-C52FCE"
   ],
-  "claim": null,
-  "links": []
+  "active_agents": []
 }

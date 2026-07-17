@@ -1,58 +1,15 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "id": "WDT-20260717T032109Z-979778",
-  "title": "Track TensorMap readers and derive WAR dependencies",
   "repo": "hw-native-sys/simpler",
   "source": {
     "kind": "github_issue",
     "repo": "hw-native-sys/simpler",
     "number": 1388
   },
-  "created_by": {
-    "login": "ChaoWao",
-    "github_id": 26245345
-  },
+  "created_by": "ChaoWao",
   "priority": "P1",
   "created_at": "2026-07-17T03:21:09Z",
-  "goal": "Extend TensorMap to track live reader accesses and automatically derive overlapping reader-to-writer WAR edges without serializing independent readers.",
-  "context": [
-    "Preserve the public orchestration API and existing OUTPUT_EXISTING overwrite semantics; keep a2a3 host_build_graph, a2a3/a5 tensormap_and_ringbuffer, host access waits, dep_gen_replay, and DFX behavior equivalent. Account for TensorMap pool, bucket-chain, arena, and fanin growth."
-  ],
-  "acceptance_criteria": [
-    {
-      "id": "AC-1",
-      "description": "The W0(inout X), R0(input X), W1(inout X) regression derives R0-to-W1 and the issue #1306 reproducer produces correct output on supported variants.",
-      "verification": {
-        "type": "manual",
-        "value": "Inspect the captured/replayed dependency graph for R0-to-W1 and attach passing #1306 regression output for each supported runtime variant."
-      }
-    },
-    {
-      "id": "AC-2",
-      "description": "Multiple pure readers remain mutually independent; writers depend on every overlapping live reader, while disjoint or retired readers add no dependency.",
-      "verification": {
-        "type": "command",
-        "value": "ctest --test-dir build --output-on-failure -R 'a2a3_tensormap|a5_tensormap|orchestrator_fanin'"
-      }
-    },
-    {
-      "id": "AC-3",
-      "description": "Partial-overlap, full-coverage retirement, cross-ring WAR, and set_tensor_data waiting for pure INPUT readers are covered by regression tests.",
-      "verification": {
-        "type": "manual",
-        "value": "Review the added tests and their passing output for partial/full overlap, cross-ring, retirement, and host-write cases."
-      }
-    },
-    {
-      "id": "AC-4",
-      "description": "Before default enablement, report TensorMap chain length, pool high-water mark, arena usage, orchestration latency, and fanin spill impact against the pre-change baseline.",
-      "verification": {
-        "type": "manual",
-        "value": "Review an attached before/after benchmark and DFX report containing every named metric."
-      }
-    }
-  ],
   "dependencies": [],
-  "claim": null,
-  "links": []
+  "active_agents": []
 }
