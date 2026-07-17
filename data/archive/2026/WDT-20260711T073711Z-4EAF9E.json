@@ -1,13 +1,14 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "WDT-20260711T073711Z-4EAF9E",
   "title": "Prefer GitHub issues or PRs as canonical task descriptions (#1)",
   "repo": "ChaoWao/wuditask",
-  "created_by": {
-    "login": "ChaoWao",
-    "github_id": 26245345
+  "source": {
+    "kind": "github_issue",
+    "repo": "ChaoWao/wuditask",
+    "number": 1
   },
-  "owner": {
+  "created_by": {
     "login": "ChaoWao",
     "github_id": 26245345
   },
@@ -50,9 +51,7 @@
     "github_id": 26245345,
     "claimed_at": "2026-07-11T07:37:23Z"
   },
-  "links": [
-    "https://github.com/ChaoWao/wuditask/issues/1"
-  ],
+  "links": [],
   "completion": {
     "outcome": "cancelled",
     "completed_at": "2026-07-11T07:38:57Z",

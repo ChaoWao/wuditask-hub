@@ -1,13 +1,17 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "WDT-20260716T092601Z-95CEF8",
   "title": "Reduce redundant WAIT edges with bounded reachability bitmap (#1376)",
   "repo": "hw-native-sys/simpler",
+  "source": {
+    "kind": "github_issue",
+    "repo": "hw-native-sys/simpler",
+    "number": 1376
+  },
   "created_by": {
     "login": "ChaoWao",
     "github_id": 26245345
   },
-  "owner": null,
   "priority": "P2",
   "created_at": "2026-07-16T09:26:01Z",
   "goal": "Implement order-independent bounded WAIT transitive reduction using recent-ancestor bitmaps, then select BL from measured 64/128/256 coverage and runtime cost.",
@@ -53,7 +57,5 @@
     "WDT-20260716T092537Z-C52FCE"
   ],
   "claim": null,
-  "links": [
-    "https://github.com/hw-native-sys/simpler/issues/1376"
-  ]
+  "links": []
 }

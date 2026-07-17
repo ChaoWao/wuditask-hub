@@ -1,13 +1,13 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "id": "WDT-20260711T042446Z-AB0A23",
   "title": "Smoke: verify remote lifecycle",
   "repo": "ChaoWao/wuditask",
-  "created_by": {
-    "login": "ChaoWao",
-    "github_id": 26245345
+  "source": {
+    "kind": "text",
+    "reason": "Historical end-to-end lifecycle smoke test with no external canonical Issue or PR."
   },
-  "owner": {
+  "created_by": {
     "login": "ChaoWao",
     "github_id": 26245345
   },

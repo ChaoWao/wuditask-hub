@@ -1,0 +1,120 @@
+name: Fallback task
+description: >-
+  Describe work here only when its execution repository cannot host the
+  canonical Issue.
+title: "[Fallback Task] "
+labels:
+  - wuditask-fallback
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Prefer an Issue in the execution repository. Use this form only when
+        that repository cannot host the Issue or when cross-repository work has
+        no suitable single owning repository.
+
+        This Issue is the canonical work description. A separate WudiTask entry
+        supplies queue priority, dependencies, its execution lease, and
+        verification evidence.
+
+  - type: input
+    id: execution_repository
+    attributes:
+      label: Primary execution repository
+      description: Repository where implementation or other work will occur.
+      placeholder: owner/repository
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_repositories
+    attributes:
+      label: Additional execution repositories
+      description: >-
+        List any other repositories involved, one per line. Leave blank for
+        single-repository work.
+      placeholder: |
+        owner/second-repository
+        owner/third-repository
+
+  - type: textarea
+    id: fallback_reason
+    attributes:
+      label: Why this work cannot use an Issue in the execution repository
+      description: >-
+        Explain the concrete constraint, such as disabled Issues, missing
+        permission, or no suitable single owner for cross-repository work.
+      placeholder: The primary execution repository has Issues disabled.
+    validations:
+      required: true
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal and scope
+      description: State the required outcome and the boundaries of this work.
+      placeholder: |
+        Outcome:
+
+        In scope:
+
+        Out of scope:
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: >-
+        Include the background, current behavior, constraints, and relevant
+        links needed to execute the work without rediscovery.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance criteria
+      description: >-
+        Write independently verifiable outcomes. Include expected verification
+        commands or evidence where possible.
+      placeholder: |
+        - [ ] Required behavior is implemented.
+        - [ ] Relevant tests pass: `command ...`
+        - [ ] Documentation is updated.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and blockers
+      description: >-
+        Link required Issues, pull requests, or WudiTask IDs. Write "None" when
+        the work has no known dependency.
+      placeholder: None
+    validations:
+      required: true
+
+  - type: dropdown
+    id: delivery_shape
+    attributes:
+      label: Expected delivery shape
+      description: >-
+        This determines whether implementation pull requests should close or
+        only reference this Issue.
+      options:
+        - One pull request can complete this Issue
+        - Multiple pull requests form one umbrella task
+        - Non-code work or delivery shape not yet known
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        For one completing pull request, use
+        `Closes ChaoWao/wuditask-hub#<issue-number>`. For an umbrella task, use
+        `Refs ChaoWao/wuditask-hub#<issue-number>` on every pull request and
+        close this Issue only after final acceptance verification.
