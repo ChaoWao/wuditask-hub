@@ -10,7 +10,8 @@ The current tree contains only:
 
 - `hub.json`: the task schema and tool API contract versions;
 - `data/open/`: open and claimed tasks;
-- `data/archive/`: immutable task outcomes;
+- `data/archive/`: retained outcomes for ordinary tasks;
+- `data/deletions/`: durable receipts for explicitly deleted erroneous archives;
 - `.github/ISSUE_TEMPLATE/`: the fallback task Issue form;
 - `.github/workflows/pages.yml`: validation and read-only Pages deployment.
 
@@ -125,6 +126,27 @@ Issues, pull requests, or task data.
 Task mutations must go through the WudiTask CLI. The Hub branch accepts
 ordinary pushes because a confirmed push is the task-claim synchronization
 point. Force pushes and default-branch deletion should remain disabled.
+
+## Erroneous archived records
+
+Ordinary `done`, `failed`, and `cancelled` outcomes remain in `data/archive/`.
+Only when a user explicitly identifies an archived record itself as mistaken,
+duplicated, or test data may the dedicated `wuditask delete` workflow remove
+it. The CLI requires the configured remote Hub, a concrete reason, exact task
+IDs, and a complete batch with no reverse dependency from any task outside the
+batch. It never force-pushes.
+
+One Hub commit removes the archived records and writes a durable receipt under
+`data/deletions/`. The receipt records the sorted task-ID batch, reason,
+verified GitHub identity, and UTC time. Its deterministic ID lets an identical
+retry confirm the operation, while a different actor or reason cannot claim
+the same deletion. Receipt-covered task IDs are permanently reserved and
+cannot be recreated, preventing ABA ambiguity.
+
+Deleting a Hub archive does not close, reopen, assign, or otherwise change its
+canonical GitHub Issue or pull request. Git history, existing clones, and
+already published Pages artifacts can still contain the original task, so
+this workflow is not privacy or secret erasure.
 
 ## Installation
 
