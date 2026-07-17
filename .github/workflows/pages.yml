@@ -42,7 +42,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           repository: ChaoWao/wuditask
-          ref: fa60ec3423c81944af60a2cb680987a12656f7a1
+          ref: 30b834add8af47f04edf4dd76ea8ee980377d4aa
           path: tool
       - name: Set up Python
         uses: actions/setup-python@v6

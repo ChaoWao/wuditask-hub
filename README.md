@@ -109,6 +109,18 @@ JSON remains the scheduling and verification record.
 
 ## Pages visibility and token scope
 
+The generated read-only site has three views:
+
+- **Tasks** shows the queue and GitHub delivery state.
+- **Dependencies** combines open and archived tasks into a dependency DAG. The
+  all-repositories view preserves cross-repository edges and assigns each
+  execution repository a distinct color. Selecting one repository shows only
+  that repository's tasks and internal edges. Nodes use the canonical Issue or
+  pull-request number as their primary label; text-only tasks use the complete
+  WudiTask ID.
+- **Install** renders the tool repository's canonical `site/install.md` guide;
+  the artifact also publishes the Markdown source directly.
+
 The generated Pages snapshot includes canonical source repositories and URLs,
 GitHub assignees, closing pull-request authors and URLs, review/check summaries,
 delivery timestamps, and query errors, in addition to the task title, goal,
