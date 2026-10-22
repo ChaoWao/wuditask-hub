@@ -15,6 +15,43 @@ The current tree contains:
 - `.github/ISSUE_TEMPLATE/`: the canonical fallback Issue form;
 - `.github/workflows/pages.yml`: validation and Pages deployment.
 
+## GitHub business overview
+
+The [existing Pages site](https://chaowao.github.io/wuditask-hub/) reads
+GitHub's native business relationships, starting at
+[simpler #2670](https://github.com/hw-native-sys/simpler/issues/2670).
+`github-view.json` defines roots and collection limits; it is not a second
+registration for every task. The site separates goal decomposition,
+blocking dependencies, and PR delivery evidence. GitHub completion and
+recorded prerequisite contracts determine the business graph; Hub archive
+is not an additional gate.
+
+- Tool implementation and tests: `ChaoWao/wuditask`, pinned by full SHA.
+- Scope and deployment: this repository, on the existing Pages URL.
+- Synchronization: hourly at minute 17, manual dispatch, and relevant Hub events.
+- Independent freshness check: hourly at minute 47 and manual dispatch,
+  in `pages-health.yml`; failure appears in Actions. The maintainer must enable
+  GitHub's workflow-failure notifications for their account. This is not a
+  guarantee against a GitHub-wide scheduler outage; the browser also marks age.
+- Maintenance owner: ChaoWao. Business acceptance stays with each Issue owner.
+- Public output only: private/unreadable references become anonymous boundaries;
+  source bodies, tokens and personal execution details are not published.
+
+If collection is partial, Pages displays that explicitly. If all roots fail,
+publication stops and the previous deployment remains; stale age is visible.
+The refresh button reloads the last deployed snapshot, not the GitHub API.
+See the tool's [business graph guide](https://github.com/ChaoWao/wuditask/blob/main/docs/github-business-graph.md)
+for local builds and status definitions.
+
+### Existing execution data is retained
+
+`hub.json`, `data/open`, `data/archive` and `data/deletions` are unchanged.
+The business graph does not read them. The sections below describe the
+**legacy execution protocol**, pending a separately validated migration to
+per-user, canonical-GitHub-task coordination. They are not requirements for
+appearing in the business graph. Do not manually delete active records or
+run old and new execution writers concurrently during a future migration.
+
 ## Source of truth
 
 Every WudiTask has a canonical GitHub Issue or pull request. A pull request may
@@ -125,26 +162,22 @@ Task mutations must use WudiTask. The Hub default branch must reject force
 pushes and deletion. Every coordination mutation uses an ordinary push; the
 tool never force-pushes this repository.
 
-## Pages
+## Pages deployment
 
-The generated GitHub Pages site has four top-level pages. Desktop navigation
-places the explanatory pages on the left and operational pages on the right:
+The workflow checks out the committed default-branch scope and a pinned tool
+commit; it never executes pull-request code. The business build needs no Hub
+task validator or execution installation. Read-only GitHub credentials are
+provided through `WUDITASK_GITHUB_TOKEN` or the workflow token; private source
+metadata is not published even when the token can read it. Pages deployment
+still requires `WUDITASK_PAGES_ENABLED=true`.
 
-- **Workflow** (left): ownership, assignment, execution, checking, and archive;
-- **Join us** (left): installation and new-machine setup;
-- **Tasks** (right): live queue, owners, active-agent logins, and delivery;
-- **Dependency graph** (right): all repositories or one repository, with a
-  distinct color per execution repository and Issue/PR numbers on nodes.
+`index.html` and `dag.html` open the business graph. Existing `install.html`
+and `workflow.html` links remain available with a legacy-protocol notice.
+For execution-record maintenance, the existing CLI validation remains usable:
 
-Pages never publishes `run_id`. Its snapshot may publish canonical Issue/PR
-body, owner logins, delivery links, reviews, checks, and archive evidence, so do
-not put secrets in task sources. Private sources require a
-`WUDITASK_GITHUB_TOKEN` secret with only the read access needed for their
-repositories. External repository events cannot trigger this Hub workflow, so
-the hourly schedule refreshes their live state. Hub-local Issue and PR events
-refresh immediately. Pull-request-target runs execute the default-branch
-workflow and check out the default-branch Hub snapshot, never PR code or a PR
-merge ref.
+```bash
+python3 tool/tools/wuditask.py --hub hub --local --json validate
+```
 
 ## Linking fallback work
 
