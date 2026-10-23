@@ -11,11 +11,6 @@ GitHub business relationships directly. Scope configuration, hourly publishing,
 and freshness checks live in the tool repository. This repository no longer
 collects or publishes a separate business snapshot.
 
-The [old URL](https://chaowao.github.io/wuditask-hub/) and its `dag.html`,
-`install.html`, and `workflow.html` entry points redirect to the tool site.
-`redirect/` contains static HTML only; `.github/workflows/pages.yml` deploys
-it on relevant pushes or manual dispatch. There is no scheduled Hub build.
-
 ### Existing execution data is retained
 
 `hub.json`, `data/open`, `data/archive` and `data/deletions` are unchanged.
@@ -135,12 +130,7 @@ Task mutations must use WudiTask. The Hub default branch must reject force
 pushes and deletion. Every coordination mutation uses an ordinary push; the
 tool never force-pushes this repository.
 
-## Pages deployment
-
-Keep Pages configured to GitHub Actions with `WUDITASK_PAGES_ENABLED=true`
-to publish the compatibility redirect. No GitHub business token or tool
-checkout is needed. The artifact contains only `redirect/`; execution data
-is never included. The tool repository owns business snapshot monitoring.
+## Execution-record maintenance
 
 For execution-record maintenance, the existing CLI validation remains usable:
 
