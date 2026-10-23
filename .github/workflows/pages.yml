@@ -1,36 +1,16 @@
-name: Deploy WudiTask Pages
+name: Redirect legacy WudiTask Pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
     paths:
-      - "github-view.json"
+      - "redirect/**"
       - ".github/workflows/pages.yml"
-  schedule:
-    - cron: "17 * * * *"
-  issues:
-    types: [opened, edited, assigned, unassigned, closed, reopened]
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - synchronize
-      - assigned
-      - unassigned
-      - ready_for_review
-      - converted_to_draft
-      - closed
-      - reopened
   workflow_dispatch:
 
 permissions:
-  checks: read
   contents: read
-  issues: read
   pages: write
-  pull-requests: read
-  statuses: read
   id-token: write
 
 concurrency:
@@ -39,70 +19,26 @@ concurrency:
 
 jobs:
   build:
-    if: github.event_name != 'schedule' || vars.WUDITASK_PAGES_ENABLED == 'true'
+    if: vars.WUDITASK_PAGES_ENABLED == 'true'
     runs-on: ubuntu-latest
-    timeout-minutes: 25
-    env:
-      GH_TOKEN: ${{ secrets.WUDITASK_GITHUB_TOKEN || github.token }}
+    timeout-minutes: 5
     steps:
-      - name: Check out task Hub
-        uses: actions/checkout@v6
+      - uses: actions/checkout@v6
         with:
-          # Pages builds only the committed default-branch Hub snapshot.
           ref: ${{ github.event.repository.default_branch }}
-          path: hub
           persist-credentials: false
-      - name: Check out pinned WudiTask tool
-        uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
         with:
-          repository: ChaoWao/wuditask
-          ref: bd650149cd135f7c5c66747f0072ca58c868f372
-          path: tool
-          persist-credentials: false
-      - name: Set up Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: "3.12"
-      - name: Build GitHub business graph
-        run: |
-          python3 tool/tools/wuditask.py --json build-site \
-            --github-scope hub/github-view.json \
-            --output "$GITHUB_WORKSPACE/_site" > build-result.json
-          cat build-result.json
-      - name: Report collection completeness
-        if: always()
-        run: |
-          python3 - <<'PYTHON'
-          import json, os
-          from pathlib import Path
-          path = Path("build-result.json")
-          result = json.loads(path.read_text()) if path.exists() and path.stat().st_size else {}
-          status = result.get("status", "failed")
-          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as out:
-              out.write(f"## GitHub business graph: {status}\n\n")
-              out.write(f"Nodes: {result.get('nodes', 0)}; relations: {result.get('edges', 0)}.\n\n")
-              if status != "complete":
-                  out.write("Incomplete collection: inspect graph diagnostics and source permissions.\n")
-          if status == "partial":
-              print("::warning::Partial GitHub collection; the published graph exposes unknown fields.")
-          PYTHON
-      - name: Configure Pages
-        if: vars.WUDITASK_PAGES_ENABLED == 'true'
-        uses: actions/configure-pages@v5
-      - name: Upload Pages artifact
-        if: vars.WUDITASK_PAGES_ENABLED == 'true'
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: _site
-
+          path: redirect
   deploy:
     if: vars.WUDITASK_PAGES_ENABLED == 'true'
+    needs: build
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Deploy redirect
         id: deployment
         uses: actions/deploy-pages@v4

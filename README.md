@@ -1,49 +1,20 @@
 # WudiTask Hub
 
-This repository is the shared coordination Hub for
-[WudiTask](https://github.com/ChaoWao/wuditask). The tool and Hub are separate
-repositories: the tool owns the CLI, schemas, skills, tests, and Pages source;
-this repository owns only task coordination data, fallback Issues, and the
-workflow that validates and publishes the read-only site.
+This repository retains legacy execution records for
+[WudiTask](https://github.com/ChaoWao/wuditask). Execution migration has not
+been performed; this repository is not archived and active records remain intact.
 
-The current tree contains:
+## Business overview has moved
 
-- `hub.json`: task schema and tool API versions;
-- `data/open/`: live coordination records;
-- `data/archive/`: retained task outcomes;
-- `data/deletions/`: durable receipts for explicitly deleted erroneous archives;
-- `.github/ISSUE_TEMPLATE/`: the canonical fallback Issue form;
-- `.github/workflows/pages.yml`: validation and Pages deployment.
+The canonical [WudiTask Pages](https://chaowao.github.io/wuditask/) reads
+GitHub business relationships directly. Scope configuration, hourly publishing,
+and freshness checks live in the tool repository. This repository no longer
+collects or publishes a separate business snapshot.
 
-## GitHub business overview
-
-The [existing Pages site](https://chaowao.github.io/wuditask-hub/) reads
-GitHub's native business relationships, starting at
-[simpler #2670](https://github.com/hw-native-sys/simpler/issues/2670).
-`github-view.json` defines roots and collection limits; it is not a second
-registration for every task. The site separates goal decomposition,
-blocking dependencies, and PR delivery evidence. GitHub completion and
-recorded prerequisite contracts determine the business graph; Hub archive
-is not an additional gate.
-
-- Tool implementation and tests: `ChaoWao/wuditask`, pinned by full SHA.
-- Scope and deployment: this repository, on the existing Pages URL.
-- Synchronization: hourly at minute 17, manual dispatch, and relevant Hub events.
-- Independent freshness check: hourly at minute 47 and manual dispatch,
-  in `pages-health.yml`; failure appears in Actions. The maintainer must enable
-  GitHub's workflow-failure notifications for their account. This is not a
-  guarantee against a GitHub-wide scheduler outage; the browser also marks age.
-- Maintenance owner: ChaoWao. Business acceptance stays with each Issue owner.
-- Public output only: private/unreadable references become anonymous boundaries;
-  public Issue/PR bodies supply bounded, attributed work-summary excerpts.
-  Full bodies, comments, tokens and personal execution records are not mirrored.
-  Keep source summaries suitable for public display.
-
-If collection is partial, Pages displays that explicitly. If all roots fail,
-publication stops and the previous deployment remains; stale age is visible.
-The refresh button reloads the last deployed snapshot, not the GitHub API.
-See the tool's [business graph guide](https://github.com/ChaoWao/wuditask/blob/main/docs/github-business-graph.md)
-for local builds and status definitions.
+The [old URL](https://chaowao.github.io/wuditask-hub/) and its `dag.html`,
+`install.html`, and `workflow.html` entry points redirect to the tool site.
+`redirect/` contains static HTML only; `.github/workflows/pages.yml` deploys
+it on relevant pushes or manual dispatch. There is no scheduled Hub build.
 
 ### Existing execution data is retained
 
@@ -166,15 +137,11 @@ tool never force-pushes this repository.
 
 ## Pages deployment
 
-The workflow checks out the committed default-branch scope and a pinned tool
-commit; it never executes pull-request code. The business build needs no Hub
-task validator or execution installation. Read-only GitHub credentials are
-provided through `WUDITASK_GITHUB_TOKEN` or the workflow token; private source
-metadata is not published even when the token can read it. Pages deployment
-still requires `WUDITASK_PAGES_ENABLED=true`.
+Keep Pages configured to GitHub Actions with `WUDITASK_PAGES_ENABLED=true`
+to publish the compatibility redirect. No GitHub business token or tool
+checkout is needed. The artifact contains only `redirect/`; execution data
+is never included. The tool repository owns business snapshot monitoring.
 
-`index.html` and `dag.html` open the business graph. Existing `install.html`
-and `workflow.html` links remain available with a legacy-protocol notice.
 For execution-record maintenance, the existing CLI validation remains usable:
 
 ```bash
