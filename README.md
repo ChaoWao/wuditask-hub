@@ -35,7 +35,9 @@ is not an additional gate.
   guarantee against a GitHub-wide scheduler outage; the browser also marks age.
 - Maintenance owner: ChaoWao. Business acceptance stays with each Issue owner.
 - Public output only: private/unreadable references become anonymous boundaries;
-  source bodies, tokens and personal execution details are not published.
+  public Issue/PR bodies supply bounded, attributed work-summary excerpts.
+  Full bodies, comments, tokens and personal execution records are not mirrored.
+  Keep source summaries suitable for public display.
 
 If collection is partial, Pages displays that explicitly. If all roots fail,
 publication stops and the previous deployment remains; stale age is visible.
