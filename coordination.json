@@ -1,0 +1,54 @@
+{
+  "format": "github-personal-execution",
+  "initialized_at": "2026-10-24T04:09:43Z",
+  "initialized_by": {
+    "actor_id": "26245345",
+    "login": "ChaoWao"
+  },
+  "migration": {
+    "mode": "in-place-upgrade",
+    "stop_verified": false,
+    "legacy_runs_resumed": false,
+    "initialized": false,
+    "legacy": [
+      {
+        "id": "WDT-20260711T072101Z-326E58",
+        "source": {
+          "kind": "github_issue",
+          "repo": "hw-native-sys/simpler",
+          "number": 1325
+        },
+        "sha256": "32da93cbab530a8f172ad20f624cdd2c0167e6ce4802dbdb777968cdb0461012"
+      },
+      {
+        "id": "WDT-20260716T092537Z-C52FCE",
+        "source": {
+          "kind": "github_issue",
+          "repo": "hw-native-sys/simpler",
+          "number": 1375
+        },
+        "sha256": "c8a99a12932812e65e1ca30fbab77d2db4862a5086b8f5077ac9db2301e6a14f"
+      },
+      {
+        "id": "WDT-20260716T092601Z-95CEF8",
+        "source": {
+          "kind": "github_issue",
+          "repo": "hw-native-sys/simpler",
+          "number": 1376
+        },
+        "sha256": "4278212f6691ec211ec4b4556c26d90ee0e1e8523336f3d83ef28915902c771d"
+      },
+      {
+        "id": "WDT-20260717T032109Z-979778",
+        "source": {
+          "kind": "github_issue",
+          "repo": "hw-native-sys/simpler",
+          "number": 1388
+        },
+        "sha256": "a88d353aefda07a4b7be16dc809e68ddcb85446095a839309e55a658039e61a5"
+      }
+    ],
+    "duplicates": [],
+    "active": []
+  }
+}
