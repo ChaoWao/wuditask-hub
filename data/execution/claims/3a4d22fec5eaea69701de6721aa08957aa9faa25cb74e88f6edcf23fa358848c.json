@@ -1,0 +1,19 @@
+{
+  "actor_id": "26245345",
+  "task_id": "I_kwDORCBKLM8AAAABZCx1Wg",
+  "current": "WDX-7E51A22B124E4950871E1644",
+  "runs": {
+    "WDX-7E51A22B124E4950871E1644": {
+      "actor_id": "26245345",
+      "login": "ChaoWao",
+      "task_id": "I_kwDORCBKLM8AAAABZCx1Wg",
+      "url": "https://github.com/hw-native-sys/simpler/issues/2666",
+      "environment": "ec879f7c149b43f5976c316bc381c277",
+      "session": "b4082b1b33d44f6c9bde039ebc0c4a0f",
+      "run_id": "WDX-7E51A22B124E4950871E1644",
+      "state": "active",
+      "acquired_at": "2026-10-27T05:55:07Z",
+      "receipts": {}
+    }
+  }
+}
