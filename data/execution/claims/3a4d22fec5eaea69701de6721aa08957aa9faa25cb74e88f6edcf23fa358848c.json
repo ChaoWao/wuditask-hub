@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Published complete Draft PR2750 A5 resident per-task ArgsDump head36f77f/base6ad,42path independently reviewed; natural CI40477317317. Published Draft PR2749 shared-context dual Worker head4e61f8/base6ad; natural CI40476317514. Sole local K2task task_20261027_015507_248690623364 stopped beforepytest at installed torch_npu2.7.1 vs required2.7.1.post4; no hardware behavior result/no retry. A5 no local silicon qualification; actual4resident smokes+frameworkpayload pending currenthead CI. Claude auth unavailable/no verdict. Receipts /tmp/a5-hbg-argsdump-candidate-20261027 and /tmp/k2-dual-worker-close-20261027. No merge or budget changes.",
-      "checkpoint_at": "2026-10-27T09:01:36Z"
+      "checkpoint": "Draft2750 head36f/base6ad naturalCI40477317317 terminal18success1MixFULLburstFAIL; ProgramFULL/HYBRID/PARTIAL2pass each, A3/A5framework40pass each, A5actual36payloadarrays2,359,296B independentlyreplayed CANN9.3/mergee2ee. No devicefirsterror retained originally; rootauthorized6file forensics-only delta frozen patch e717956d in /tmp/a5-hbg-argsdump-candidate-20261027/forensics;42CPU+hooks pass, no producerfixclaim/pushyet. Draft2749 head4e CI40476317514 terminal: A3newHBG2pass/TMR2numericalFAILbeforeclose; oppositeWorker callable tableclobber sourceproved, soleauthor repairing existing moduleowner path. A5framework40pass thenuploadECONNRESET; rerunintent unspent/heldpendingnewsource. SolelocalK2task preflightversionmismatch/noexecution/noretry. Issue2666 synced9currentreplacements owner/historypreserved. NoClaudeverdict/noNPUresubmit/nomerge.",
+      "checkpoint_at": "2026-10-27T09:33:05Z"
     }
   }
 }
