@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T00:49:22Z",
       "receipts": {},
-      "checkpoint": "PR2718 frozen integrated6file patch 0d307bea5d66d86389362485345a68a77de32ea2ee4f333fa13c6aedf7783954 on c034/main4321; shell+kernel rootaccepted integration; A3 exactSoC precheck red14fail14pass→green28; combined95CPU/hooks pass. Manifest/report .docs/pr2718-ci-repair-20261026 in framework-a5-publication-20261026. Independent review pending; source frozen; no remote/NPU/retry/cancel/dispatch. A5 sched100 remains unclassified missing device site; no budget reset.",
-      "checkpoint_at": "2026-10-27T01:02:07Z"
+      "checkpoint": "PR2718 published explicit f01 lease→14e7ac0ca4d4fe54066e4b925b0344875207217f on freshmainb916; one47filefeaturecommit,95CPU+allhooks pass, accepted7repairhashes unchanged andindependentreview0Must/Should. Remote/body exactreadback DraftOPEN. Following only14e exacthead naturalCI now; no reruns/cancel/dispatch/manualNPU/budgetchange. A5old sched100 unclassified; configuredClaude partial25tools timeout/noverdict. Receipts .docs/pr2718-ci-repair-20261026/PUBLISHED_PR_READBACK.json andFINAL_PUBLICATION_MANIFEST.json.",
+      "checkpoint_at": "2026-10-27T04:51:30Z"
     }
   }
 }
