@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "2750localcandidatef0f6b314bb3645ec5ecbb279621d5d6170cd0c5d/basefreshba4cdb1f/tree2cd12674 aftermerged2688;clean1featurecommit,no manualconflicts,range-diffequals,43paths41blobsunchanged60a onlyreadywatchdog+contractscombine;ACKpackedcommit/barriers/CAS/supervisorguard/unknownownerspreserved,rootreservedREADMEunchanged,#2726A3baseexact. Actualrebuilt5CPUtargets83GTests pass,both2688controls+unchangedproductionheaderprobe baseline60ared1/newgreen0,allapplicablehooks/diffcheckpass. Frozenlocalreport docs-kernel-mode/reviews/resume-2749-2750-20261027/2750/REPORT.md SHA39f3a5c9... TEST_RECEIPT/COMMANDS/HASHES. Remote2750still60aDraft/no publicupdates,pendingrootconcretepublicationinstruction. Prior60aCIterminal17success1Mixsite102fail1utA5cancelled retained,noCPUcausalclaim/Mixfixqualification. K22749separatewriter/no sourceedit. NoNPU/tasksubmit/CIrerun/budgetchange/merge. SameWDXauthorityACTIVE;rootreviewsbeforepublish.",
-      "checkpoint_at": "2026-10-27T13:19:32Z"
+      "checkpoint": "2750rootacceptedlocalf0f6b314bb3645ec5ecbb279621d5d6170cd0c5d/baseba4 aftermerged2688;5rebuiltCPUtargets83GTests/bothwaitercontrols/actualheaderoldred1newgreen0/hooksPASS;43featurepaths41unchanged60a only2688header+contracts,ACKCASbarriersstopunknownpreserved. FreshrightsACTIVE/ownforkold60a/mainba4verified then1explicit60aforcelease pushsuccess samePRbranch; remotehead/base/bodyexactreadback OPEN Draft bodySHA822284eb... NewnaturalCI40511003790attempt1inprogress exactf0,docs40511003905queued. Report docs-kernel-mode/reviews/resume-2749-2750-20261027/2750/REPORT.md SHA27bf20039... PUBLICATION_RECEIPT+commands+source/testhashes. Newheadsiliconpending/noMixcausalclaim,old60a17success1onboardsite102failure1utA5cancelled andca4/36fevidencepreserved. NoIssue2666remoteupdate/Ready/NPU/tasksubmit/CIrerun/newbudget/merge. K2separatewriterrootcoordinates. SameWDXauthorityACTIVE forCI followthrough.",
+      "checkpoint_at": "2026-10-27T13:22:37Z"
     }
   }
 }
