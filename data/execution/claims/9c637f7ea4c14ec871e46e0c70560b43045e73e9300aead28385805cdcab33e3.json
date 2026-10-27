@@ -1,7 +1,7 @@
 {
   "actor_id": "26245345",
   "task_id": "PR_kwDORCBKLM8AAAABKtauQQ",
-  "current": "WDX-DA468272A3E142CC877830F6",
+  "current": null,
   "runs": {
     "WDX-DA468272A3E142CC877830F6": {
       "actor_id": "26245345",
@@ -11,11 +11,18 @@
       "environment": "ec879f7c149b43f5976c316bc381c277",
       "session": "4ac165e984224685bdb5449f38cc1442",
       "run_id": "WDX-DA468272A3E142CC877830F6",
-      "state": "active",
+      "state": "released",
       "acquired_at": "2026-10-27T00:49:22Z",
       "receipts": {},
-      "checkpoint": "PR2718 Ready OPEN/unmerged ce8c84223b4d50b3a38747e71c450d22e0d32ab8 onfreshb916, one47filefeaturecommit originalauthor clean. Finalbody exactreadback SHAe895884ee0808184843332cb6e14515e586f33f33c7e62d25512e0345f489b6c. NaturalCI40455779823 all19success/docs success; actualmerge/nativea381 parentsb916+ce8, A3actual40/40 CANN9.0/Py3.12/x64,A5actual40/40 CANN9.3/Py3.11/aarch64,0skip/error/fail. Exactproductionverifier acceptsplans/JUnit;12positiveactualdumps originalcheckerPASS;2A5HBG explicitrefusal/recoveryarms falsepayloadcapability, requiredproducerunimplemented#2666. Bothdeviceleasesreleased;0manualNPU/rerun/budgetchange.423CPU exactnativece8/hooks/independentreview pass. OldordinaryA5timeout unclassified; Claude timeoutnoverdict disclosed. Handofftouserreview/notmerge/branchretained. RootsoleIssue2666writer, localprecisepatchready. Receipt .docs/pr2718-ci-repair-20261026/CE8_COMPLETION_REPORT.md andCURRENT_HEAD_CI_BOARD.json.",
-      "checkpoint_at": "2026-10-27T05:52:52Z"
+      "checkpoint": "PR2718 repair/publication/current-head qualification delivered to userreview: Ready OPEN ce8c84223b4d50b3a38747e71c450d22e0d32ab8 onb916, onecommit originalauthor clean/unmerged/branchretained; CI40455779823 all19success/docs success, actualsource/nativea381 A3/A5each40 no skip/error/fail, same-source plan/JUnit verified and12downloadedpositivedumps checked. A5HBG2queuearms explicittypedrefusal/recovery only, requiredper-taskproducer remainsunimplemented#2666; oldordinaryA5timeoutunclassified.423CPU/hooks/root+independentreview pass; Claude timeoutnoapproval disclosed. No manualNPU/rerun/budgetchanges, bothdeviceleasesreleased. Root updatedIssue2666 exactsixparagraphs andretainscoordination; thisscopecomplete, no newwork launched. Fullreceipt ownworktree .docs/pr2718-ci-repair-20261026/CE8_COMPLETION_REPORT.md plus CE8_READY_PR_READBACK.json andCURRENT_HEAD_CI_BOARD.json.",
+      "checkpoint_at": "2026-10-27T05:52:52Z",
+      "released_at": "2026-10-27T05:53:20Z",
+      "disposition": "completed",
+      "finish": {
+        "checkpoint": "PR2718 repair/publication/current-head qualification delivered to userreview: Ready OPEN ce8c84223b4d50b3a38747e71c450d22e0d32ab8 onb916, onecommit originalauthor clean/unmerged/branchretained; CI40455779823 all19success/docs success, actualsource/nativea381 A3/A5each40 no skip/error/fail, same-source plan/JUnit verified and12downloadedpositivedumps checked. A5HBG2queuearms explicittypedrefusal/recovery only, requiredper-taskproducer remainsunimplemented#2666; oldordinaryA5timeoutunclassified.423CPU/hooks/root+independentreview pass; Claude timeoutnoapproval disclosed. No manualNPU/rerun/budgetchanges, bothdeviceleasesreleased. Root updatedIssue2666 exactsixparagraphs andretainscoordination; thisscopecomplete, no newwork launched. Fullreceipt ownworktree .docs/pr2718-ci-repair-20261026/CE8_COMPLETION_REPORT.md plus CE8_READY_PR_READBACK.json andCURRENT_HEAD_CI_BOARD.json.",
+        "outcome": "completed"
+      },
+      "stop_verified": false
     }
   }
 }
