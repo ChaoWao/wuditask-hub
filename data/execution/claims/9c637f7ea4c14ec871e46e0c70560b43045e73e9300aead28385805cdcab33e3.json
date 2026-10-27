@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T00:49:22Z",
       "receipts": {},
-      "checkpoint": "PR2718 amended/published ce8c84223b4d50b3a38747e71c450d22e0d32ab8 explicit14e lease on freshb916. Root+independent accepted6file ArgsDump unsupported/recovery repair e886; supportedchecker unchanged, reviewer streamblocker reproduced/fixed. One47filecommit clean preservingoriginalauthor/other41hashes. Host-only nativece8/currentPython identity +423CPU postcommit/allhooks pass. ExactPRbody/head DraftOPEN readback. NaturalCI40455779823 attempt1 inprogress ce8; docs40455779673. Old14e terminal18success/1fail,A3actual40/40,A5actual38/40; no manualrerun/NPU/budgetincrease, C4producer remainsrequiredunimplemented; oldordinaryA5timeoutunclassified. Receipts ownworktree .docs/pr2718-ci-repair-20261026/ARGSDUMP_FINAL_PUBLICATION_MANIFEST.json,ARGSDUMP_PUBLISHED_PR_READBACK.json,CURRENT_HEAD_CI_BOARD.json.",
-      "checkpoint_at": "2026-10-27T05:33:43Z"
+      "checkpoint": "PR2718 Ready OPEN/unmerged ce8c84223b4d50b3a38747e71c450d22e0d32ab8 onfreshb916, one47filefeaturecommit originalauthor clean. Finalbody exactreadback SHAe895884ee0808184843332cb6e14515e586f33f33c7e62d25512e0345f489b6c. NaturalCI40455779823 all19success/docs success; actualmerge/nativea381 parentsb916+ce8, A3actual40/40 CANN9.0/Py3.12/x64,A5actual40/40 CANN9.3/Py3.11/aarch64,0skip/error/fail. Exactproductionverifier acceptsplans/JUnit;12positiveactualdumps originalcheckerPASS;2A5HBG explicitrefusal/recoveryarms falsepayloadcapability, requiredproducerunimplemented#2666. Bothdeviceleasesreleased;0manualNPU/rerun/budgetchange.423CPU exactnativece8/hooks/independentreview pass. OldordinaryA5timeout unclassified; Claude timeoutnoverdict disclosed. Handofftouserreview/notmerge/branchretained. RootsoleIssue2666writer, localprecisepatchready. Receipt .docs/pr2718-ci-repair-20261026/CE8_COMPLETION_REPORT.md andCURRENT_HEAD_CI_BOARD.json.",
+      "checkpoint_at": "2026-10-27T05:52:52Z"
     }
   }
 }
