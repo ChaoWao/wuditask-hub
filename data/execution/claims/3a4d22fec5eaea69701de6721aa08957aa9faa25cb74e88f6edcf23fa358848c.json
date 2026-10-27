@@ -13,7 +13,9 @@
       "run_id": "WDX-7E51A22B124E4950871E1644",
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
-      "receipts": {}
+      "receipts": {},
+      "checkpoint": "A5 resident ArgsDump: independent task-keyed 128B header / 4N+64M+140W layout and 8 CPU contracts green; genuine missing-participant and premature-release negative controls retained. Shared producer frozen e3e0820 with root review pending. Host budgeted arena-tail/pre-READY signature publication audit in progress; no NPU/push/capability flip. Own worktree a5-hbg-resident-argsdump-20261027; local DESIGN and receipts under .docs/a5-hbg-argsdump-20261027.",
+      "checkpoint_at": "2026-10-27T06:32:56Z"
     }
   }
 }
