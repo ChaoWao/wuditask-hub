@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "A5 resident ArgsDump: independent task-keyed 128B header / 4N+64M+140W layout and 8 CPU contracts green; genuine missing-participant and premature-release negative controls retained. Shared producer frozen e3e0820 with root review pending. Host budgeted arena-tail/pre-READY signature publication audit in progress; no NPU/push/capability flip. Own worktree a5-hbg-resident-argsdump-20261027; local DESIGN and receipts under .docs/a5-hbg-argsdump-20261027.",
-      "checkpoint_at": "2026-10-27T06:32:56Z"
+      "checkpoint": "A5 resident ArgsDump integrated local WIP on 8f5925: common bounded producer e3e0820 plus exact dtype helper 7b20558; task-keyed arena tail, all-participant boundaries, stable service stop/accounting. CPU resident/host/native suites green; actual public Program a5sim FULL/HYBRID/PARTIAL and Mix chain16_mask7 FULL payloads pass; joined DFX actual child passes. CCEC AIC/AIV+AICPU compile passed before latest timeout cleanup. Full product docs/CPU controls and final review freeze in progress. No NPU/push; final source/Spec and hardware qualification pending. Receipts .docs/a5-hbg-argsdump-20261027 in own feature worktree.",
+      "checkpoint_at": "2026-10-27T07:55:57Z"
     }
   }
 }
