@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T00:49:22Z",
       "receipts": {},
-      "checkpoint": "PR2718 remote14e naturalCI terminal18success/1A5frameworkfailure; A3 actual40/40 and A5 actual38/40 with only existing HBG ArgsDump unsupported-1001. Frozen sixfile refusal+recovery qualification patch19e687a57199aefc76ec425606dd11757ad14148c3d8154b21b841210f12292d on14e; currentPython/native14e, baseline red8fail/1pass and scene1fail, candidate423relatedpass/allhooks. _check_dump unchanged. Independent review pending before amend/push explicit14e lease. No nativegate/manualNPU/rerun/budgetchange; mandatory C4 producer gap remains; oldordinaryA5timeout unclassified. Receipts worktree .docs/pr2718-ci-repair-20261026/ARGSDUMP_REPAIR_MANIFEST.json and CURRENT_HEAD_CI_BOARD.json.",
-      "checkpoint_at": "2026-10-27T05:27:35Z"
+      "checkpoint": "PR2718 amended/published ce8c84223b4d50b3a38747e71c450d22e0d32ab8 explicit14e lease on freshb916. Root+independent accepted6file ArgsDump unsupported/recovery repair e886; supportedchecker unchanged, reviewer streamblocker reproduced/fixed. One47filecommit clean preservingoriginalauthor/other41hashes. Host-only nativece8/currentPython identity +423CPU postcommit/allhooks pass. ExactPRbody/head DraftOPEN readback. NaturalCI40455779823 attempt1 inprogress ce8; docs40455779673. Old14e terminal18success/1fail,A3actual40/40,A5actual38/40; no manualrerun/NPU/budgetincrease, C4producer remainsrequiredunimplemented; oldordinaryA5timeoutunclassified. Receipts ownworktree .docs/pr2718-ci-repair-20261026/ARGSDUMP_FINAL_PUBLICATION_MANIFEST.json,ARGSDUMP_PUBLISHED_PR_READBACK.json,CURRENT_HEAD_CI_BOARD.json.",
+      "checkpoint_at": "2026-10-27T05:33:43Z"
     }
   }
 }
