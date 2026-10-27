@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T00:49:22Z",
       "receipts": {},
-      "checkpoint": "PR2718 clean rebased frozen c0347d51aab35e82f6c8f03e952c01a70c532622 onto main4321b3d2137d72d1bd6cee7c6f964345a90cb4f8; full feedback and open/draft overlap checked; shell regression 2fail2pass reproduces absent mapfile; portable loop candidate under test; kernel author isolated on frozenbase with root-approved persistent_state extension; no remote/NPU writes. Plan /tmp/pr2718-status-20261026/PLAN.json",
-      "checkpoint_at": "2026-10-27T00:54:59Z"
+      "checkpoint": "PR2718 frozen integrated6file patch 0d307bea5d66d86389362485345a68a77de32ea2ee4f333fa13c6aedf7783954 on c034/main4321; shell+kernel rootaccepted integration; A3 exactSoC precheck red14fail14pass→green28; combined95CPU/hooks pass. Manifest/report .docs/pr2718-ci-repair-20261026 in framework-a5-publication-20261026. Independent review pending; source frozen; no remote/NPU/retry/cancel/dispatch. A5 sched100 remains unclassified missing device site; no budget reset.",
+      "checkpoint_at": "2026-10-27T01:02:07Z"
     }
   }
 }
