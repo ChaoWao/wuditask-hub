@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "2749 head0a230 Draft unchanged. CurrentCI40818600093 mergeb969 tree==PR: A3/A5 framework48pass each,8unique same/crossruntime receipt combos each all counters/gold/guards pass. A3 artifact independently strict-verified exactCIcheckout; A5 log-only48pass+strictverify/taskexit0, uploadCreateArtifactECONNRESET only failure. BothhardwareUT andA3onboard pass. Current13success1uploadfailure1A5onboardactive4macOSqueued. One bounded targetedA5rerun request REJECTED403(workflowstillrunning), no retryexecution started. Afterterminal freshhead/rights then one targetedretry, no loop/budget/skip. Evidence integration/ci-40818600093; PR/Issue2666 exactbodyreadbacks verified; ROADMAPHTMLlocal. 2625read-only030 review complete oldP2fixed,2P3docs; actuallatestCI19success,40framework each andA3capturecasesrun; localrecommendation only no publicapproval. Bounded2625/2647dcf2integrationmap rootverified actualAPIs/carriers/phases/Coresemantics, notfull2647review.2750workflowauthblocked unchanged. Children complete; no writer/newNPU, readonlywatch78804 no verifiedwakeafterfinal. CHECKPOINT top authoritative.",
-      "checkpoint_at": "2026-10-29T05:01:05Z"
+      "checkpoint": "User2749ci fail: fresh all3feedback no actionable, head0a230/baseab unchanged MERGEABLE Draft. OriginalCI40818600093 terminal18successfuljobs, soleA5frameworkjob failure confirmed raw48pass/taskexit0 thenCreateArtifact ECONNRESET. Priorpreterminal403 didnotexecute. One bounded targetedrerun NOW ACCEPTED / replacementjob123298599959, runner238PR-npu-a5-2, inprogress setupframeworkenvironment. No source/workflow/budgetchanges or unrelatedjobsrerun. Rootactive waitingactualresults+artifact verification, thencurrentheadchecks+feedback beforeReady/usermerge. Evidence integration/ci-40818600093/RERUN_STATUS.md+RERUN_ACCEPTED_JOBS.json. Do NOTsubmitanotherretry on resume; inspectjob123298599959 first. 2750scopeauthblock unchanged;2625reviewcomplete2P3local only;planninglocal/noautowakeverified.",
+      "checkpoint_at": "2026-10-29T06:30:20Z"
     }
   }
 }
