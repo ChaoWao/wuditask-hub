@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "2749 published0a230(tree7eb6,parentab4748d) Draft; normal final build stamp matches and110CPU pass16hardware skip; both independent reviews0. CI40818600093 active, docs/precommit/Ubuntu packaging/network/deepseek green; framework48 each pending, no current failure seen. ExactPR/Issue2666 readbacks complete. Portable crossruntime oracle replaces invalid host dlopen, oldpath-only diagnosis withdrawn. Root concurrently read-only2625 pinned030/base4bd; Standards2P3doc, Spec oldP2closed/no new concrete finding final pending. Reports docs-kernel-mode/reviews/pr2625-030-20261029 and2749 CHECKPOINT current top. 2750local94 still workflowauthblocked remote f0Draft. Same authority, no new NPU/manualCI or budget; no automatic root wake afterfinal verified.",
-      "checkpoint_at": "2026-10-29T04:49:48Z"
+      "checkpoint": "2749 head0a230 Draft unchanged. CurrentCI40818600093 mergeb969 tree==PR: A3/A5 framework48pass each,8unique same/crossruntime receipt combos each all counters/gold/guards pass. A3 artifact independently strict-verified exactCIcheckout; A5 log-only48pass+strictverify/taskexit0, uploadCreateArtifactECONNRESET only failure. BothhardwareUT andA3onboard pass. Current13success1uploadfailure1A5onboardactive4macOSqueued. One bounded targetedA5rerun request REJECTED403(workflowstillrunning), no retryexecution started. Afterterminal freshhead/rights then one targetedretry, no loop/budget/skip. Evidence integration/ci-40818600093; PR/Issue2666 exactbodyreadbacks verified; ROADMAPHTMLlocal. 2625read-only030 review complete oldP2fixed,2P3docs; actuallatestCI19success,40framework each andA3capturecasesrun; localrecommendation only no publicapproval. Bounded2625/2647dcf2integrationmap rootverified actualAPIs/carriers/phases/Coresemantics, notfull2647review.2750workflowauthblocked unchanged. Children complete; no writer/newNPU, readonlywatch78804 no verifiedwakeafterfinal. CHECKPOINT top authoritative.",
+      "checkpoint_at": "2026-10-29T05:01:05Z"
     }
   }
 }
