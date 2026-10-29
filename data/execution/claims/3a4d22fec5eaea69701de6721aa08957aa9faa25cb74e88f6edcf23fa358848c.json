@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "2749CIrecoverycomplete: sole targetedA5job123298599959 SUCCESS, artifact12878900072 downloaded strict48/48+8lifecyclepairs atb969/tree==0a. Rootconsumedactualevidence, all19CIjobsSUCCESS; PRunchanged0a markedReadyforreview, body/Issue2666exactreadbacks+ROADMAPHTMLupdated, NOmerge. CodeRabbitIN_PROGRESSafterReady; no moreCIretry. UsersteeredIssue2773design: main6b6/current2625e9 vsissueab; oldCoregatehistorical, latestalreadypre-forkreset/fixedresultID. RootlocalREPORT+independentfact/design+finalstressreview complete under docs-kernel-mode/reviews/issue2773-design-20261029. Recommend commonpre-forkreset+ONEcommonallnativecallbackfinalizer(nonlast0,lastpublishes+reports)+structuredresult+residentfirstfault; sharedlifetimeandfrozenreferencedcode/resources, orderedargupdatespermitted. No extraRTStailtask/captureAPIfamily. Current2625mutationcontractchangeexplicitproposal, noimplementation/public2773comment/normativechange. A3streamfailuremeasured; A5/graphlastreport/suppression/costunproved. Allagentscomplete/noNPUwriter. 2750authblockedunchanged. BothCHECKPOINTtops current; noautomaticrootwakeverified.",
-      "checkpoint_at": "2026-10-29T06:58:18Z"
+      "checkpoint": "2749 MERGEDverified main0cf5b3d51340b8d09f0b25ece38651300fd3f963,parent6b6,at07:22:54Z. Stablefeaturepatch4c1fb22 equalsaccepted0a; tree differenceonlypreceding2771PTOpin. No postmergehardwareclaim. MERGE_RECEIPT+Issue2666exactreadback saved; ROADMAPHTML graydelivered ONLYsingleWorker eagerlifecycle, parentOPEN/fullK2C4notdone. No newsource/CI/branchcleanup.2773designREPORT stillproposal,usermergenotapprovalofmutationcontract; noimplementation.2750remote f0Draft/local94workflowauthblocked(scopesstillgist/read:org/repo), futuremustrebasecurrent0cf+newownercontractfirst. Allchildrencomplete/no writer/NPU. CurrentCHECKPOINTtops updated, noverifiedautowakeafterfinal.",
+      "checkpoint_at": "2026-10-29T07:27:25Z"
     }
   }
 }
