@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "2749 MERGEDverified main0cf5b3d51340b8d09f0b25ece38651300fd3f963,parent6b6,at07:22:54Z. Stablefeaturepatch4c1fb22 equalsaccepted0a; tree differenceonlypreceding2771PTOpin. No postmergehardwareclaim. MERGE_RECEIPT+Issue2666exactreadback saved; ROADMAPHTML graydelivered ONLYsingleWorker eagerlifecycle, parentOPEN/fullK2C4notdone. No newsource/CI/branchcleanup.2773designREPORT stillproposal,usermergenotapprovalofmutationcontract; noimplementation.2750remote f0Draft/local94workflowauthblocked(scopesstillgist/read:org/repo), futuremustrebasecurrent0cf+newownercontractfirst. Allchildrencomplete/no writer/NPU. CurrentCHECKPOINTtops updated, noverifiedautowakeafterfinal.",
-      "checkpoint_at": "2026-10-29T07:27:25Z"
+      "checkpoint": "Explicituserpropose2773design DONE: oneproposalcomment https://github.com/hw-native-sys/simpler/issues/2773#issuecomment-6491365498 exactbodyGETverified. Canonical PROPOSAL_COMMENT.md/receipt in docs-kernel-mode/reviews/issue2773-design-20261029. GraphQLreadtimedoutbeforePOST; RESTlatestIssue/comments deduped thenonePOSTsuccess. OriginalIssuebody/state/ownership/code unchanged. Proposalcommonreset/nativefinalizer/structuredresult/firstfault+frozengraphresourcecontract/orderedargupdates/steps+evidencegates; discussionnotimplementationapproval. LocalREPORT+ROADMAPHTMLlinkupdated(no productcommit/backupbranch). Mainfb63 CI-only2763 after2749merge0cf; live2625e9OPEN. 2749deliveredscopedonly,2750stillauthblocked. Noagents/writer/NPU, sameWDT7E51; noautowakeverified.",
+      "checkpoint_at": "2026-10-29T08:08:23Z"
     }
   }
 }
