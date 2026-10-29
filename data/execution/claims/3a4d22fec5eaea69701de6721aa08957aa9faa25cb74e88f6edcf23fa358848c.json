@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Explicituserpropose2773design DONE: oneproposalcomment https://github.com/hw-native-sys/simpler/issues/2773#issuecomment-6491365498 exactbodyGETverified. Canonical PROPOSAL_COMMENT.md/receipt in docs-kernel-mode/reviews/issue2773-design-20261029. GraphQLreadtimedoutbeforePOST; RESTlatestIssue/comments deduped thenonePOSTsuccess. OriginalIssuebody/state/ownership/code unchanged. Proposalcommonreset/nativefinalizer/structuredresult/firstfault+frozengraphresourcecontract/orderedargupdates/steps+evidencegates; discussionnotimplementationapproval. LocalREPORT+ROADMAPHTMLlinkupdated(no productcommit/backupbranch). Mainfb63 CI-only2763 after2749merge0cf; live2625e9OPEN. 2749deliveredscopedonly,2750stillauthblocked. Noagents/writer/NPU, sameWDT7E51; noautowakeverified.",
-      "checkpoint_at": "2026-10-29T08:08:23Z"
+      "checkpoint": "Delivered local step-by-step Issue2773 HTML: docs-kernel-mode/issue2773-explained.html, final sha256 3a5448e12bd57aa1460e539b80279810f3d8ce7068ecb1541e2301945f68bf20. Eight chapters with manual diagrams, optional details. Root offline Chromium QA178 assertions PASS, six callback orders, completion/outcome, graph lifetimes, fault/hang, navigation, no page errors/network/overflow375/768/1440; actual screenshots inspected. Independent final content review passed. Reports and checkpoint in reviews/issue2773-design-20261029. No product code/commit/PR/push/NPU or backup branch; target-design explanation only. Proposal comment6491365498 remains discussion, no implementation approval. 2749 merged scoped; 2750 workflow-auth blocked unchanged. Same parent2666/WDT7E51; no new work claim.",
+      "checkpoint_at": "2026-10-29T08:32:57Z"
     }
   }
 }
