@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Delivered local step-by-step Issue2773 HTML: docs-kernel-mode/issue2773-explained.html, final sha256 3a5448e12bd57aa1460e539b80279810f3d8ce7068ecb1541e2301945f68bf20. Eight chapters with manual diagrams, optional details. Root offline Chromium QA178 assertions PASS, six callback orders, completion/outcome, graph lifetimes, fault/hang, navigation, no page errors/network/overflow375/768/1440; actual screenshots inspected. Independent final content review passed. Reports and checkpoint in reviews/issue2773-design-20261029. No product code/commit/PR/push/NPU or backup branch; target-design explanation only. Proposal comment6491365498 remains discussion, no implementation approval. 2749 merged scoped; 2750 workflow-auth blocked unchanged. Same parent2666/WDT7E51; no new work claim.",
-      "checkpoint_at": "2026-10-29T08:32:57Z"
+      "checkpoint": "Detailed prepare revision done in PREPARE_PROTOCOL.md: async reset/copy before fork, commonCPUentry decision, commoncurrentfinalpublisher; no mandatorynewAICPUpreparekernel or predecessorresultpointer. HTML6a4f7695 final root220browserassertionsPASS+actualdeepdesktop/mobileview; model36cases/4mutants. Latestuser review2625 DONE: head762/basefb63OPENnondraftmergeable, commonactualeager/capturepath confirmed, CI19mainjobs+docs pass. OneP2 completion_rc==-1 sentinel turns signedfailure into success atkernel_capture_api.cpp300/c_api_shared.cpp2814; exactproductionfinalizefunction isolatedCPUharnessrepro, surroundingsstubbed/notfullfixture. StandardsoneP3detachedpark_preparedoc+nonblockingnaming. Reports in docs-kernel-mode/reviews/pr2625-762-design-20261029. RecommendfixP2+tests,notrewriteornewproposalrequirements. No productedits/commits/push/GHcomment/NPU/CIrerun. Same2666WDT7E51; noautobackupbranch.",
+      "checkpoint_at": "2026-10-29T15:10:54Z"
     }
   }
 }
