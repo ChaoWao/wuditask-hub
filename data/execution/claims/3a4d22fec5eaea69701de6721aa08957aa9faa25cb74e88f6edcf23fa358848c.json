@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "User2749ci fail: fresh all3feedback no actionable, head0a230/baseab unchanged MERGEABLE Draft. OriginalCI40818600093 terminal18successfuljobs, soleA5frameworkjob failure confirmed raw48pass/taskexit0 thenCreateArtifact ECONNRESET. Priorpreterminal403 didnotexecute. One bounded targetedrerun NOW ACCEPTED / replacementjob123298599959, runner238PR-npu-a5-2, inprogress setupframeworkenvironment. No source/workflow/budgetchanges or unrelatedjobsrerun. Rootactive waitingactualresults+artifact verification, thencurrentheadchecks+feedback beforeReady/usermerge. Evidence integration/ci-40818600093/RERUN_STATUS.md+RERUN_ACCEPTED_JOBS.json. Do NOTsubmitanotherretry on resume; inspectjob123298599959 first. 2750scopeauthblock unchanged;2625reviewcomplete2P3local only;planninglocal/noautowakeverified.",
-      "checkpoint_at": "2026-10-29T06:30:20Z"
+      "checkpoint": "2749CIrecoverycomplete: sole targetedA5job123298599959 SUCCESS, artifact12878900072 downloaded strict48/48+8lifecyclepairs atb969/tree==0a. Rootconsumedactualevidence, all19CIjobsSUCCESS; PRunchanged0a markedReadyforreview, body/Issue2666exactreadbacks+ROADMAPHTMLupdated, NOmerge. CodeRabbitIN_PROGRESSafterReady; no moreCIretry. UsersteeredIssue2773design: main6b6/current2625e9 vsissueab; oldCoregatehistorical, latestalreadypre-forkreset/fixedresultID. RootlocalREPORT+independentfact/design+finalstressreview complete under docs-kernel-mode/reviews/issue2773-design-20261029. Recommend commonpre-forkreset+ONEcommonallnativecallbackfinalizer(nonlast0,lastpublishes+reports)+structuredresult+residentfirstfault; sharedlifetimeandfrozenreferencedcode/resources, orderedargupdatespermitted. No extraRTStailtask/captureAPIfamily. Current2625mutationcontractchangeexplicitproposal, noimplementation/public2773comment/normativechange. A3streamfailuremeasured; A5/graphlastreport/suppression/costunproved. Allagentscomplete/noNPUwriter. 2750authblockedunchanged. BothCHECKPOINTtops current; noautomaticrootwakeverified.",
+      "checkpoint_at": "2026-10-29T06:58:18Z"
     }
   }
 }
