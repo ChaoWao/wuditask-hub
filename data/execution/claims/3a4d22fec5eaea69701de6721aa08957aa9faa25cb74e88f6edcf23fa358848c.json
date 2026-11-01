@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "PR2805fixCI: all3feedbacksurfaces/readactualfailedlogs. A3framework pip IncompleteRead beforebuild; A5macsim healthy[7-0]-100/free masked exactlyOPEN2799/unchangedsimpath; UbuntuUT8253Pythonpass+413of423Cpppass then20minjobbudget. ONEunchangedheadfailed/canceledrerun41267965270attempt2pending. Soleauthoramendedlocal f480c0d58a2e428a9c8bfede883295da3f5e018c onecommitonmaine422 clean15files after2filedoc/probefixes(allhooksPASS/8stubgreen+retiredischargeomissionnegativeRED/independentreviewaccepted). NOproductiondelta since820/noNPU; rootwaitingexistingrerunbeforepush toavoidduplicatequeues. Majorinline acknowledged streamwideexceptionfallback cannotattributeperrun; event-sync substitutionmisses507018,docsclarified,notclaimedresolved. LocalCI_REPAIR.md/ignoredKNOWN_ISSUES saved; pendingnotgreen. No pushyet, no backups.",
-      "checkpoint_at": "2026-11-01T08:09:39Z"
+      "checkpoint": "PR #2805 repair pushed as single commit 6fec5c7981d99257c7f5ac9967adb59de4588aa3. Root verified clean 16-file diff, hooks and source manifest, exact force-with-lease. Follow-up changes only hosted Linux UT total budget 20 to 30 minutes (two full-budget cancellations, no assertions failed), contract docs, and predecessor retirement probe with 8 passing cases and discriminating negative control. Production execution code unchanged. Attempt 2 cleared A3 framework download failure; A5 Ubuntu repeated existing issue #2801 and canceled macOS, whose earlier issue #2799 remains unqualified. Issue #2799 has only a request for qinchuanyu to take ownership, no confirmed assignment. New CI run 41288975318 pending pre-commit; docs passed. Main advanced only PTO-ISA pin in #2795 to 0aac91cb7; previous native evidence retains old pin qualification. PR body and review replies updated, major stream-wide exception attribution finding left open. Local roadmap/design HTML updated, 41 browser checks passed. No new NPU runs, merge, design backup push, or parent issue closure.",
+      "checkpoint_at": "2026-11-01T08:35:41Z"
     }
   }
 }
