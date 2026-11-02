@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "PR2829publishedc7e98b47 solemain142 explicitlease1e->c7, body/readbackexact nonDraft NOTready newCIpending. Root457refs306735567B/77src0; matchingnative4SIM/20CTest656PASS3skip/947Python5SIMhooks0. BCore2repair eec4 sole503 clean accepted483refs636420567B/37+5src+Dclosure0; NEWc7composition37feature sourceunionbeforebuild/NPU parentunmerged. D2CPPsourcea8f14 now1compiler normalsetup then5targets/mutants, noST/product/later0successoracle. CreadonlynewCI+oldfailure/feedbacktriage. ROADMAPHTML/currentPLANupdated; noNPU/merge/Issueclose/backup/newduplicatePR. User2773reviewmainagreement but no privateverdict/Ncounter/epochgate.",
-      "checkpoint_at": "2026-11-02T12:41:51Z"
+      "checkpoint": "PR2829c7 remains OPEN/nonDraft onmain142; CI41446276099 A3SIM+A3UT+bothframeworks+DFXsmokeGREEN, A5SIM/A3onboardRED Creadingactualnewheadlogs no rerun. Core2cleanlocal3398solec7 compositionaccepted37files0; Bnormalnative/bothA3hosts0, remaining matching J1. Dcleanlocal66feaa twoCPUtests273PASS3skip+4negativecontrols, root2624refs0 acceptedlocal notstandalonePR/silicon. C4filediagnosticplan857c/Dreviewpending no productapproved. Issue2666currenttop synced readback5e40425c no close/reassign. ROADMAPHTML+PLAN/CURRENTupdated13:12; noNPU/merge/designpush/newduplicatePR.",
+      "checkpoint_at": "2026-11-02T13:10:25Z"
     }
   }
 }
