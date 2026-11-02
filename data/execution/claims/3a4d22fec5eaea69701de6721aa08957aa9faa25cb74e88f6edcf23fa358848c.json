@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Current root checkpoint docs-kernel-mode/reviews/parallel-mainline-20261101/CURRENT_CHECKPOINT.txt. Root b9a23316 86committedblobs+3225main entries0; complete L3done/refill71CPP249Py/indep0 accepted, SAME2829 update waits actual3path stream-attribution test matrix. PMU3ebfedab clean sole0e3217refs+22blobs0/fullCPU+indep; B new exact3eb Swimlane23source-only, parentactualunsupportedbaseline0. Cnewexactb9 ownnative0/actual3oldcaseRED, editing boundedowned507018 stream-error oracles, noHW. Dnewexact0e5testpath task-group common-closure update test-first, actualSDKsignatures/sourceplan frozen/no productAPI/no realSDK; ownnativeONEcompiler allowed C+Dmax2. SoleHOSTrequest2791456 stillpreACKsharedflock/noACK/task/device/OUT, no duplicate/bypass. PR2845CI18pass2realfail(-100/SIM600)1cancel; ONLY no-hostedrunner macUT rerun nowrunning, ubuntuSUCCESS; body honestupdated. 2844A3unclassified remains. Main142/no merge/Issueclose/designpush.",
-      "checkpoint_at": "2026-11-02T20:44:52Z"
+      "checkpoint": "Root CURRENT_CHECKPOINT.txt refreshed21:39. SAMEPR2829 now3d3c40429 solemain142/88files, explicitd9lease pushed/head-body verified/comment6588650969. NewCI A3HBG+TMR DeviceDemand BOTH run26 finalize507046; fatalTMR successorwaitsuccess vs predecessor507018 remains assertionFAIL; A5SIM600. Raw archived,no devrerun. C Core2-on3d3 37source/rootproof0 ownnative0/fourhosts8wrappers ONEcompiler, then causaldiag. HOST originalONEtask27914569572 dev0released terminal0: actual1PASS76stages6fulltiles98304words/replay8,15/eagertail5/HOSTunmappedbeforecapture; root69refs0+Bindep0 accepted limited938A3HBGDFXoff. B SWcleanlocald544sole3eb23blobs/root2501refs0/1003CPP423Py189commands/indep0, nextofflineA3plan. D bothTMR/HBGcontrolledsamegroupfirstreaderCPUgates119+69refs0, realSDKunproven; B3/B4scalarfullnumericplanpending. PMU3ebacceptedlocal. #2844/#2845realCIerrorsnotwaived; macUTinfraonlyrerun2845SUCCESS. No merge/Issueclose/designpush.",
+      "checkpoint_at": "2026-11-02T21:37:50Z"
     }
   }
 }
