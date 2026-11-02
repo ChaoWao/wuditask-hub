@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Userconfirmed unique delivery Core1PR then commonCore2, no triple2625/2647 merge; rootowns convergence. Main950fetched/treeequalbc. Combined92frozen clean normalnative+5hosts/30CPP815PASS12skip/537uniqueCPU2legalskip/141transport98children/hooks0; root883artifact474211304B hash0. BfoundCore1emplace bad_alloc crossing raw CABI; CNEWexclusive955soleparent950 preparing actualtwoarmRED→narrowboolfailure/ownersretry, finalonecommit+matchingnative/hosts/tests/review before rootPR. Original92/296/26a proof frozen, no relabel. B A5consumer3files cf5718f3 frozen93CPU/hooks/actualadapter0,52refsroot0,noSDK; nowindependentCore1review. D16rowmigrationledger complete/rootread, originalauthorship disclosed. No newmanualhardware/push/merge/close; sameWDX rights active. CURRENT_CHECKPOINT updated; PRbodydraft at tmp, noPRyet.",
-      "checkpoint_at": "2026-11-02T08:32:36Z"
+      "checkpoint": "Core1PR2829 OPEN nonDraft9fa solemain950,58files. Matchingnative+5hosts/39CTest887PASS12skip/697Python2skip12HWdeselected/hooks0;16transport finishing, original launcher AttributeError retained. Independent onboard-emplace P2 fixed RED-GREEN; CodeRabbit new real sim result-map allocation after destructive drain P2 now Cfix/Breview, not accepted yet; other stale HostApi/log/lease comments triaged; no arbitrary outstanding-count quota. CI41414947556 precommitSUCCESS/docsSUCCESS remainingqueued. BNEWCore2sourceonly2b08 sole9fa,30featurepaths/rangediff=,frozen dependency2829. DNEWlocalA5backing utility19PASS3mutants, continuing CAPI/hooks/maker, no devices. SameWDX rights active, no merge/oldPRclosure/designpush. CURRENT_CHECKPOINT/ROADMAP local recovery.",
+      "checkpoint_at": "2026-11-02T09:11:54Z"
     }
   }
 }
