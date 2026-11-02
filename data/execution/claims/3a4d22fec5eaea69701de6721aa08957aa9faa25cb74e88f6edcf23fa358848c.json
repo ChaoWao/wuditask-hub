@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Rootaccepted union13 e2d6 matching176refs93MB0/native7CPP362PASS3skip/311distinctPy/full8436collection/hooks0; rootadded acceptedbounded2test705d/B0/0/379Py33refs0 ->union15 a439, Bmatching379/hooks inprogress. Cdiag local a330 solec7 clean4paths/root+D679refs578MB0/4DSO103children366Py/hooks0; Cbounded local514 solec7 clean2paths/rootB33refs0, nopush. D actualparentchildRED42refs1launchvs2 ->prototype10actualforkGREEN, CPPfixtureerrors preserved/fixing; rootfound poppedPython-snapshot and excessiveemptytickquery issues authorrepairing, V3 existingnormalORearly eligibility approved6prod+2tests, noSTweakening. Cnow read-onlyfullC4HOSTcontrols3398 gaps. BnextNEW3398A3packet PLAN only. Exactc7A5CI25fail/141pass63refs0; oldscope/freeproof unresolved. Rootupdated2829body+reply6579761804 caller-synccleanupcontract readbackexact. Remoteheadstillc7/notready; no rerun/NPU/newPR/merge/Issueclose/designpush.",
-      "checkpoint_at": "2026-11-02T14:48:20Z"
+      "checkpoint": "Same ACTIVE run/main142/PR2829c7 checked; open62incldraft no duplicate(#2827A5session separate). Root boundedunion15 accepted28refs/15source/a4390,379configuredPASS/hooks0; prior13native362CPP311Py preserved. D race actualRED->179configured+4fresh sensitive-nodePASS, native/4CPP0; final5 already-scannedhole fixture fixes nondiscriminating mutant; producer/consumer/installation/member mutants finishing. C authorized NEW source-only integrationtree core1-ci-final-integration-20261102 offmain142,18repairpaths with five semanticcapacity overlaps, source gate before compiler/commit. B3398newA3own8productsJ1, noSDK/NPU; root approved tiny initial-17/-19 consumeroverlay AFTERbuild to discriminate firstcopy omissions, frozenruntime3398/testoverlay explicit. C4V2 30actualGitblobs/root0 read-only, requiredcompatibleupdates retained, noimplementation. ROADMAP/HTML/checkpoint refreshed15:03. No push/newPR/rerun/merge/Issueclose/designbackup/hardware.",
+      "checkpoint_at": "2026-11-02T15:05:54Z"
     }
   }
 }
