@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "PR2829c7 remains OPEN/nonDraft onmain142; CI41446276099 A3SIM+A3UT+bothframeworks+DFXsmokeGREEN, A5SIM/A3onboardRED Creadingactualnewheadlogs no rerun. Core2cleanlocal3398solec7 compositionaccepted37files0; Bnormalnative/bothA3hosts0, remaining matching J1. Dcleanlocal66feaa twoCPUtests273PASS3skip+4negativecontrols, root2624refs0 acceptedlocal notstandalonePR/silicon. C4filediagnosticplan857c/Dreviewpending no productapproved. Issue2666currenttop synced readback5e40425c no close/reassign. ROADMAPHTML+PLAN/CURRENTupdated13:12; noNPU/merge/designpush/newduplicatePR.",
-      "checkpoint_at": "2026-11-02T13:10:25Z"
+      "checkpoint": "RootacceptedCore2local3398solec7 matching905refs366868686B/37src0; native5hosts8DSO152commands18CPP556PASS9skip/524Py4skip/hooks0. NoSDK/NPU/newPR; parent2829unmerged. C7CI A3tenresourcefails sourcegapcapacityonlysemanticDONE, Dnewexclusivec7twoCPUtestsREDfirst1compiler. Cdiagnostic4pathplan857c/D469/root23inputs0 accepted separatec7child1compiler, noextraobserver/businessstate. Breadonly2collectiveclassifiedfault testplan+new3398A3packetplan no compiler. Network1setupaction3x100sdownloadfailurebeforecheckout; jobrerunAPI403workflowactive noexecutedretry. 2829bodyupdated/readbackexact; roadmapHTML/PLAN/CURRENT13:23. Oldphysicalproof/postfaulthealthlimitsremain; noSTweakening/merge/Issueclose/designpush.",
+      "checkpoint_at": "2026-11-02T13:23:19Z"
     }
   }
 }
