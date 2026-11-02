@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "CURRENT_CHECKPOINT.txt current21:55. Main142/SAMEWDX. #2829 updated3d3 complete88 sourceexact/PRbody truthful; actualCI16pass2fail1cancel1running. Dualruntime507046 run26 narrowed24DEVICE→HOST25→firstHOSTrefill26. FatalBwaitsuccess vs A507018 preservedred; C newexact3d3 test_chip_worker-only REALfork/nativeleaf diagnosticloop approved, no productfixbeforecausalRED. Core2-on3d3 ownnative+4hosts+8wrappers152commands all0; broadCPP/Py/hooks paused; Ccompilerfree. HOST originalONEtask27914569572 A3HBGDFXoff root+Bindep accepted; numeric3test now cleanLOCAL05c3e831sole938/hooks0/root3blobs0, no nativeidentityrebuild. SWcleanLOCALd544sole3eb/root23blobs0/1003CPP423Py189commands; B approvednewcleanqualifier normalnative+8A3products/offlinepacket SECONDJ1compiler, noHWrelease. D B3full16KsameM/Gscalarconsumer source+configuredCPU underway7existingpaths/finite48MiBgrant2, realSDKunproven; minimalSDKprereqplan next, no actualSDK/HW. #2844/#2845unclassifiedCIerrors retained/no devrerun. ROADMAP/HTMLlocalupdated. No merge/Issueclose/designpush.",
-      "checkpoint_at": "2026-11-02T21:46:34Z"
+      "checkpoint": "Timestamp correction: authoritative checkpoint_at UTC and dynamically dated CURRENT_CHECKPOINT.txt apply; previous prose21:55 was inaccurate. Work facts unchanged: #2829remote3d3/CIactualfailures/sourceboundrun26 and observerloop; Core2latest4hosts8wrappers0; HOSThealthyA3accepted+cleanLOCAL05c3sole938; SWcleanLOCALd544 and Bnormalqualifier/offlinepacket; D7pathsame-modelscalarconsumerCPU implementation. SameWDX/main142; no newSDK/task/merge/Issueclose/designpush.",
+      "checkpoint_at": "2026-11-02T21:46:57Z"
     }
   }
 }
