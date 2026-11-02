@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Core1PR2829 OPEN nonDraft9fa solemain950,58files. Matchingnative+5hosts/39CTest887PASS12skip/697Python2skip12HWdeselected/hooks0;16transport finishing, original launcher AttributeError retained. Independent onboard-emplace P2 fixed RED-GREEN; CodeRabbit new real sim result-map allocation after destructive drain P2 now Cfix/Breview, not accepted yet; other stale HostApi/log/lease comments triaged; no arbitrary outstanding-count quota. CI41414947556 precommitSUCCESS/docsSUCCESS remainingqueued. BNEWCore2sourceonly2b08 sole9fa,30featurepaths/rangediff=,frozen dependency2829. DNEWlocalA5backing utility19PASS3mutants, continuing CAPI/hooks/maker, no devices. SameWDX rights active, no merge/oldPRclosure/designpush. CURRENT_CHECKPOINT/ROADMAP local recovery.",
-      "checkpoint_at": "2026-11-02T09:11:54Z"
+      "checkpoint": "PR2829 remote9fa main950 notaccepted. Userfixcomments: C localsim actualRED-GREEN4x10/51CPU/affectedhosts/2HBGobserver72commands +claimmarker causalRED-GREEN frozen, noamendpush yet. Allfeedback inclnewselfreview read; rootquota explanation4440875248 UNRESOLVED, no arbitrarypolicy; Pythonnativeclose gate correct. ActualCIreds A3UT HCCLinit7 before run/lowercauseunknown, A3ST REAL L3strongobserver blockscontinuousrefill +missingmarker, crossarchSW4 clockexportbeforefinalroot causes-1000 (Cfixapproved snapshotownhostfact/defer). False-success automaticfailure anderrororacles open Btriage; A5ST similar; frameworkA3total900kill notprovenstall. D A5CPU/CAPI19unit+residentCOW/pin-restore negatives passed; inheritedCore2eagerheld.original earlyclear realRED/fixapproved, freeze thenD aidsL3design. Core2clean2b08localdep only. No newmanualhardware/rerun/merge/closure/designpush; latestROADMAP/CURRENT_CHECKPOINT includesactualfailures.",
+      "checkpoint_at": "2026-11-02T09:47:08Z"
     }
   }
 }
