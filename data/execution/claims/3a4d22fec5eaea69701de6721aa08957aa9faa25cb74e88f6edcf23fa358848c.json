@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "SameWDX ACTIVE/main142. Remote #2829 full8a28/102CPP188Py3focused+indep0; CIrunning/precommitPASS/comment6590462986. Core2 NEW8a28dependenttree source37exact/3282protected0, ownnormalJ1native+4hosts+8wrappers/26CPP5Py/hooks ACTIVE. CPU sixrefgate actualTMR0/HBG0 in48MiB/grant2, managed20557757/45333492B, all6retain/record/finalize/release0; noSDKsupport/numericsclaim. D next smallestrealSDKgroupplan. ONE TMR Swimlane task208865618659 dev0 actualchild1PASS6s/138stages15fulltiles/acl_finalize0; externalcheckerFAIL missingoptionalplog, originaltaskFAILpreserved/no rerun; Barchive+offlineDFX/ELF/cleanupforensic/explicitrelease. EarlierHBGrawacceptedseparately. Gen7plan3hypotheses UNPROVEN. LocalROADMAP/HTML/relationship/checkpoint refreshed, no merge/Issueclose/designpush.",
-      "checkpoint_at": "2026-11-02T23:00:50Z"
+      "checkpoint": "SameWDX ACTIVE/main142/open64. #2829 head8a28 CI17SUCCESS3FAIL2SKIP; actual Program native RED baff6a78: truthful [507018,0] native finalizers, B65536 HOST bytes copied before lane rejection. C implementing shared required finalize-with-delivery op/no fallback before init; mandatory retirement unchanged. Core2 clean LOCAL bad5d40f sole8a28 CPU qualified/indep0, no push. PMU22 staged onbad5 CPU775CPP3skip158Py/4hosts/8wrappers181commands/hooks0; root1151refs+22source3297protected0; D independent review. B source-design common same-M publication after ONE actual SDK task309596020091/dev1 firstcommonlaunch507009 afterGroupBegin; update/replay not reached/exact leafUNKNOWN, lock explicitly released/no rerun. Root59refs0. Whole-group assumption withdrawn, same-Mgoal not recapture. Local ROADMAP/HTML/relationship/CURRENT_CHECKPOINT+Issue2666 current section refreshed with exact remote readback; no merge/Issueclose/designpush.",
+      "checkpoint_at": "2026-11-03T00:11:01Z"
     }
   }
 }
