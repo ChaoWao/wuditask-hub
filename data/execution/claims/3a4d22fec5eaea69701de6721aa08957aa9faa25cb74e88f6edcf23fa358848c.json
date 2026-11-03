@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Only CI repairs2829/2844; latestuser reenabled idle30min checks B restoring same-thread+rights guard (not enabled until verified). PR2844 actually rebased/pushed f00c753e2 parentmain93f incl2845; unchanged4filepatch,51CPP/fullhooks/reviewPASS; CI41639274426running,no failure yet. PR2829 remotee65,rootlocal31dednotpushed. D realfork/native main93fGREEN/current31dedRED proves strongobserver blocks oldL3 semanticcredit/refill; bothinclude2845. Scope77 decision todefer L3bridge withdrawn; D solewriter necessary physical-credit/retainedobservation fix preserving2845; C independentreview. Automaticpair overconstraint V2 actual2RED->whole27GREEN, strictSDK/output/cleanup preserved. Otherfeatures andhardwareAB frozen,no NPU/debugupstream/merge. Private PLAN/ROADMAP current.",
-      "checkpoint_at": "2026-11-03T13:11:14Z"
+      "checkpoint": "Published PR2829 fdadec7bd1751f3b0e5a798ed204328ca7c5c962 oneparentmain93f,clean86paths+10157/-1808,normalfull86hooks+amendhooksPASS;explicit e65 originlease andremotehead/body/countverified. CI41646958387 running notReady. Actual mainGREEN/prRED/fixGREEN causalrefill via essentialL3 physicalcredit/retainedobservation,2845stickyhandoff/publicL3semanticdone preserved. Current187CPP;442Python4missingSIMskips;45finalPythonPASS;independent0Must0Should. Broadlocalrun12F7151P198S98E/interrupted:absentSIM and4GNU14.3/CANN9.3 classmemaccess sameTU/deps asmain(no baselineexec); obsoletecommunicatorhang fixedRED18GREEN. No fullgreen/hardwareclaim. PR2844 f00 CI14success1running5queued/no red. Timerrestoredsame-thread idle1800s onlytwoPR,25controls+actualcronverified,notimmediate. Otherfeatures/HWABfrozen. Root postcommitnormalnativefd done,onecausalverificationrunning;allchildwritersended. ROOT_ACCEPTANCE_1+ROADMAP/HTML/PLAN current. No newPR/NPU/upstreamdebug/merge/Issueclose/designbackup.",
+      "checkpoint_at": "2026-11-03T13:49:31Z"
     }
   }
 }
