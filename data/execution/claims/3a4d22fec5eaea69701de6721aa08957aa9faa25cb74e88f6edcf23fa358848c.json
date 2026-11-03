@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Published PR2829 fdadec7bd1751f3b0e5a798ed204328ca7c5c962 oneparentmain93f,clean86paths+10157/-1808,normalfull86hooks+amendhooksPASS;explicit e65 originlease andremotehead/body/countverified. CI41646958387 running notReady. Actual mainGREEN/prRED/fixGREEN causalrefill via essentialL3 physicalcredit/retainedobservation,2845stickyhandoff/publicL3semanticdone preserved. Current187CPP;442Python4missingSIMskips;45finalPythonPASS;independent0Must0Should. Broadlocalrun12F7151P198S98E/interrupted:absentSIM and4GNU14.3/CANN9.3 classmemaccess sameTU/deps asmain(no baselineexec); obsoletecommunicatorhang fixedRED18GREEN. No fullgreen/hardwareclaim. PR2844 f00 CI14success1running5queued/no red. Timerrestoredsame-thread idle1800s onlytwoPR,25controls+actualcronverified,notimmediate. Otherfeatures/HWABfrozen. Root postcommitnormalnativefd done,onecausalverificationrunning;allchildwritersended. ROOT_ACCEPTANCE_1+ROADMAP/HTML/PLAN current. No newPR/NPU/upstreamdebug/merge/Issueclose/designbackup.",
-      "checkpoint_at": "2026-11-03T13:49:31Z"
+      "checkpoint": "Scheduledsame-thread checkafterreal>=1800idle; WDXactive,only2829/2844. New2829 head7f751457c6060bebf42ff647662c0d1d71e2e666 actuallypushedoneparentmain93f/clean87paths10158/-1808,explicitfdadeclease,head/body/countverified. PriorfdadecUbuntuUT125956820276 singleexpectedenum omission TASK_ENDED13 (8563PASS18S210deselected1FAIL),MacCancelled. Exactlocal1RED -> add1line -> wholeatomic10PASS; strictdict/unknown/renumbercontrols unchanged; independent0blocker+normalamendhooksPASS. No productiondelta/nativeidentityrelabelling (ownbinaryactualfdadec). NewCI41653490014pending,docs41653489865SUCCESS;no rerun. PR2844f00 16SUCCESS/1running3queued2skip/no failure. Allthreefeedbacksurfacesno newactionable. Evidence HEAD_FDADEC_WIRE_CI_1 andROADMAP/HTML/PLANupdated. TimercontinuesonlytwoPR,allotherfeaturespaused,noHW/devicequeries/newPR/merge/Issueclose/designbackup.",
+      "checkpoint_at": "2026-11-03T14:29:13Z"
     }
   }
 }
