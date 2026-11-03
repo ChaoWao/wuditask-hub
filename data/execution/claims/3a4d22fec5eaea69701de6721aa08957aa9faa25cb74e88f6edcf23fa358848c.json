@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Published SAME2829 05b94fd52 solemain142/89paths CLEAN normalfull89+amendhooksPASS. Root544refs492483791B+17finalsources+89HEADblobs5717642B+3222protected0; Dfinal3c6597ee0/0. Explicit8a28leasepush+remotehead/bodyreadback done. True Program65536HOSTD2H RED→GREEN/nativeB0 retained/mandatorycleanup;433CPP4disclosedskip294Py12HWdeselected4hosts. NewCI41555240875 running, old8a28CI17/3/2 notwaived. Root acknowledges unnecessary final-evidence waiting removed; no additional manualgate. Parallel ACTUAL tasks restarted: CnewCore2-on05b port37+matching; Bnewcommonpublicationbase68 implementation realTMRGMreader firstRED/no productionyet; Dnewresidentproofbase05b samegenerationactualborrow/freecontrol+gateddiag6paths. Max2heavyJ1/noHW. PMU68e969fsolebad5 localaccepted remains. LocalROADMAPHTML/relationship/checkpoint updated; Issue2666currentpublicationupdate. No merge/Issueclose/designpush.",
-      "checkpoint_at": "2026-11-03T00:51:07Z"
+      "checkpoint": "Published SAME2829 46ac142c6 sole142/91paths CLEAN: D7 passive proof+stderr witness and Mac A5 session1200/Ubuntu600/devicebudgets unchanged. Root91blobs+3303protected05b+3220main0/full91normalhooks0/indep0Must0Should. Explicit05bleasepush+remotehead/bodyreadback; newCI41561355222 running. Root read all3old05b failedlogs1777187B:17pass3fail2skip, A5TMRwideHOSTsentinel PASS24.7; remainingA3/A5timeout+15residentfree notwaived. Diagnostic originalsame-slotPending/CompletecontrolGREENon05b, actualmissingstderrborrowrowRED→380PyGREEN,156CPP/107wrapper/fourhosts. DfiniteONEA3TMRDemandpacket offline, finalroot+Cread beforetask<=300; noHWyet. CCore2-on05b37portCPUdone870CPP12skip534Py4skip31deselect/4hosts8wrapper/hooks frozen936refs pendingrootaccept. BC4realTMRGMreaderRED→4eacharch/HBGRED→19eacharch, commonproducer/CAPI/ownerWIP noSDK. ROADMAPHTML/checkpoint/relationship andIssue2666 current refreshed historicaltailpreserved. No merge/close/designpush.",
+      "checkpoint_at": "2026-11-03T01:45:07Z"
     }
   }
 }
