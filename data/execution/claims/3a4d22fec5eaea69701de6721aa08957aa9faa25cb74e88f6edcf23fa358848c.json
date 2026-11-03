@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "15:34UTC scheduledcheck,WDXactive,onlytwoPR. HeadsunchangedOPEN2829 7f751457c/2844f00. Threefeedbacksurfacesno newcomments/reviews/unresolvedinline.2829CI41653490014=15SUCCESS1running4queued2skip/noFAIL.2844CI41639274426=18SUCCESS2queued2skip/noFAIL;A3onboard125930177556actualSUCCESS. Fullrawreadconfirms oldfailingTMR TestDfxJoinedLaunchAttribution actuallyPASS11.0s(schedule)/10.27s(pytest),HBGmatchingPASS10.8/10.13s;notclaimeddefinitivehistoricalrootcause.2844remainingDeepSeekA3/onboardA5queued. One snapshot+raw CI_CHECKS/20261103T153448Z,ROADMAP/HTML/PLANupdated. No rerun/sourcechange/HWquery/newtask/merge/Issueclose/designbackup. TimercontinuesonlytwoPR,otherspaused.",
-      "checkpoint_at": "2026-11-03T15:36:30Z"
+      "checkpoint": "16:08UTC scheduledcheck,WDXactive,onlytwoPR. BothOPENheadsunchanged2829 7f751457c/2844f00;threefeedbacksurfacesno newcomments/reviews/unresolvedinline. PR2844 currentheadCI41639274426 COMPLETED/SUCCESS headf00 (updated15:57UTC),20SUCCESS2expectedSKIP(deploy/CodeRabbit),all requiredCIgreen;no merge or Issueclose. PR2829CI41653490014=16SUCCESS1running3queued2skip/noFAIL,A5onboardrunning;remainingA3onboard/DeepSeekA3/UTA5queued. One snapshot CI_CHECKS/20261103T160834Z,ROADMAP/HTML/PLANupdated. No repairs/reruns/HWqueries/tasks. Timerremains onlytwoPR because2829notcomplete;otherfeaturespaused. Futurecheck shouldinclude baseRefOid/mergeability ifmainadvances;notclaimoldCIagainstnewbase.",
+      "checkpoint_at": "2026-11-03T16:10:25Z"
     }
   }
 }
