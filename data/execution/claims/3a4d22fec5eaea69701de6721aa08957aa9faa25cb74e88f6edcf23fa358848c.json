@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "16:08UTC scheduledcheck,WDXactive,onlytwoPR. BothOPENheadsunchanged2829 7f751457c/2844f00;threefeedbacksurfacesno newcomments/reviews/unresolvedinline. PR2844 currentheadCI41639274426 COMPLETED/SUCCESS headf00 (updated15:57UTC),20SUCCESS2expectedSKIP(deploy/CodeRabbit),all requiredCIgreen;no merge or Issueclose. PR2829CI41653490014=16SUCCESS1running3queued2skip/noFAIL,A5onboardrunning;remainingA3onboard/DeepSeekA3/UTA5queued. One snapshot CI_CHECKS/20261103T160834Z,ROADMAP/HTML/PLANupdated. No repairs/reruns/HWqueries/tasks. Timerremains onlytwoPR because2829notcomplete;otherfeaturespaused. Futurecheck shouldinclude baseRefOid/mergeability ifmainadvances;notclaimoldCIagainstnewbase.",
-      "checkpoint_at": "2026-11-03T16:10:25Z"
+      "checkpoint": "Only2829/2844. Published e8f3fe62b8691c2f3afb269ac8269341978868a2 on93f,onecommit/clean/91paths;explicit7f originlease/headbodyreadbackexact. Delta8existingtestfiles only:no production/budget/oracle changes. FourDFX consumers offer6beforestrongwait;4CPU RED->GREEN/233assertASTsame. Failurewindow for lifetime+automatic preservesoriginalerror/cleanup. Integrated138PASS5.91s,independentreviews0blockers,normalnativebuild/full91hooks+amendhooks0. NewCI41686745308/docs41686745323 started3running1skip,NOTqualified. 2844f00 unchanged20SUCCESS2SKIP/notmerged. Healthy507046/TMRemptyjoin unclassified;2CPUbridgeschedulesPASS notRTScauseproof. NoNPUtask/devicequery/manualrerun/newPR/merge/backuppush. Allagentsstopped. Privateevidence HEAD_7F_REFILL_ROOT_1 under docs-kernel-mode/reviews/parallel-mainline-20261101/first-acceptance/core1-pr2829-monitor;ROADMAP/HTML/PLANupdated. TimeronlytwoPRremains. NextreadnewheadCIactualterminalerrors+3feedbacksurfaces;noclaimoldboardfixed.",
+      "checkpoint_at": "2026-11-03T17:45:50Z"
     }
   }
 }
