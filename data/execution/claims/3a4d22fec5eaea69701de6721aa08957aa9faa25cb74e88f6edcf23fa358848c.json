@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "PR2829 actually published e65c055e91aeb5c282a8ca613e56f3c02d63159e soleparent70499/main,77files+8625/-1637,clean; explicit313c origin lease succeeded,remotehead/body/count readback exact. All normalcommit hooksPASS. Own native704 rebuilt normally;38 lifecycle+404 resident(Python real2RED->GREEN) and13CPP PASS; last5CPP Bsession30771 actualrunning on publishedhead, no newtargets/source. MissingPTOinclude localcompDB fixed using normalbuilder pinconfigure,no product/helper edits or guardbypass. NewCI41626071268/docs41626070453 queued, NOT merge-ready. OldL3 semantic preserved, newL3 protocol/CI/alias/archive/demo movedout. HistoricalAIV/SIMfaults unresolved;main2848 moves someSIMDaily notproofoldfailfixed. OnlythisPR;timerdisabled;othersfrozen;no merge/close/reassign/designbackup.",
-      "checkpoint_at": "2026-11-03T11:18:54Z"
+      "checkpoint": "Only CI repairs2829/2844; latestuser reenabled idle30min checks B restoring same-thread+rights guard (not enabled until verified). PR2844 actually rebased/pushed f00c753e2 parentmain93f incl2845; unchanged4filepatch,51CPP/fullhooks/reviewPASS; CI41639274426running,no failure yet. PR2829 remotee65,rootlocal31dednotpushed. D realfork/native main93fGREEN/current31dedRED proves strongobserver blocks oldL3 semanticcredit/refill; bothinclude2845. Scope77 decision todefer L3bridge withdrawn; D solewriter necessary physical-credit/retainedobservation fix preserving2845; C independentreview. Automaticpair overconstraint V2 actual2RED->whole27GREEN, strictSDK/output/cleanup preserved. Otherfeatures andhardwareAB frozen,no NPU/debugupstream/merge. Private PLAN/ROADMAP current.",
+      "checkpoint_at": "2026-11-03T13:11:14Z"
     }
   }
 }
