@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Scheduledsame-thread checkafterreal>=1800idle; WDXactive,only2829/2844. New2829 head7f751457c6060bebf42ff647662c0d1d71e2e666 actuallypushedoneparentmain93f/clean87paths10158/-1808,explicitfdadeclease,head/body/countverified. PriorfdadecUbuntuUT125956820276 singleexpectedenum omission TASK_ENDED13 (8563PASS18S210deselected1FAIL),MacCancelled. Exactlocal1RED -> add1line -> wholeatomic10PASS; strictdict/unknown/renumbercontrols unchanged; independent0blocker+normalamendhooksPASS. No productiondelta/nativeidentityrelabelling (ownbinaryactualfdadec). NewCI41653490014pending,docs41653489865SUCCESS;no rerun. PR2844f00 16SUCCESS/1running3queued2skip/no failure. Allthreefeedbacksurfacesno newactionable. Evidence HEAD_FDADEC_WIRE_CI_1 andROADMAP/HTML/PLANupdated. TimercontinuesonlytwoPR,allotherfeaturespaused,noHW/devicequeries/newPR/merge/Issueclose/designbackup.",
-      "checkpoint_at": "2026-11-03T14:29:13Z"
+      "checkpoint": "15:00UTC scheduledCIcheckonly2829/2844;WDXactive. HeadsunchangedOPEN:2829 7f751457c,2844f00. Allthreefeedbacksurfacesno newcomments/reviews/no unresolvedinline;oldreviewapprovalnotinvented. 2829CI41653490014 actualUbuntuUT125982576444/macUT125982576313/precommitSUCCESS;total14SUCCESS1running5queued2skip,noFAIL. 2844CI41639274426 total17SUCCESS1running2queued2skip,noFAIL,A3onboardrunningnotqualified. No repairs/sourceedits/reruns/HWqueries/newtasks. One status+feedbacksnapshot CI_CHECKS/20261103T150045Z;ROADMAP/HTML/PLANupdated. TimercontinuesonlytwoPR;allotherfeaturespaused;no merge/Issueclose/backuppush.",
+      "checkpoint_at": "2026-11-03T15:02:05Z"
     }
   }
 }
