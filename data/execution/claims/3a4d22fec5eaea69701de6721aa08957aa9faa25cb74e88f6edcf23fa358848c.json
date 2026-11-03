@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "ONLYPR2829, timerdisabled/cronremoved. Actualdirtylocal fix/pr2829-native-completion-scope-20261103 frozenCANDIDATE1:100→77paths +8352/-1637 (37prod39test1doc). WholeL3END/observe/earlycredit revertedoldsemanticterminal; independentCI/alias/demo movedout. Root100snapshotentries6126649B hash0,36changed64oldPRunchanged3275parentprotected0; AST22/ruff/format/diffcheck0. Reportd621e046 source368e0c3f receipt6b169307, NOT runtimequalification. Dnative/legacybridge+Ctestspec sourcereviewactive. B nowonlynecessary currentownnativeJ1 CPU validation/realfixture serialgrant1+staged>=2 bridge regression, concretegateplan firstifneeded, no prodAPI/framework/weakguard/timeout/newfeatures. Remote313c/100 unchanged no commit/push/newPR; archivefull313c preserved; independentpatches saved only. AIV/47SEGFAULT/SIMrc11/joinedcauses UNRESOLVED; old313c8A5copy_fromPASS not77qualification. No429blindrerun/SDK/hardware/merge/close/reassign/backup. ROADMAPHTML/PLAN/CURRENT updated frozenactualcandidate. Root source/actualvalidation acceptance required before originalPR update.",
-      "checkpoint_at": "2026-11-03T07:30:44Z"
+      "checkpoint": "Only PR2829; timer disabled. New main2a51(#2853;2854 is openIssue), own dirty branch fix/pr2829-native-completion-main2a51-20261103 77paths+8511/-1637; no.github changes, all77 source equal reviewedSOURCE3, oldL3 inherited,13upstream paths nooverlap. Own native d5c50b80 naturally2a51 built; actual6bridge+32regression38PASS0skip. D independent0Must0Should. B executing18CPP+normalhooks, solewriter; no fullsweep/hardware/newfeatures. Remote313c unchanged; next normal singlecommit and explicit313c forcelease same2829, newheadCI then actualfailfix. OldAIV/SIMhang/segfault remainunresolved; no newPR/merge/close/reassign/designbackup.",
+      "checkpoint_at": "2026-11-03T10:54:07Z"
     }
   }
 }
