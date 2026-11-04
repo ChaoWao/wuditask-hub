@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "User authorized #2862 rebase/fix and removing all process/history from product docs, preserve concise matched current EN/CN. SameWDX active recheck passed after transient GH error; no acquire/takeover. Fork zxx0288/simpler design/native-capture-from-main maintainerCanModify=true head3a1 unchanged. Isolated newworktrees pr2862-main-docs-20261104 and pr2862-docs-current-20261104; existing author/dirty branches untouched. C owns rebase preserve2856/2834/2866 onactualmain63ff; D owns docs/native*+mkdocs only in separatetree; root integrates verifies192priorCPU tests notnewheadapproval, hooks normal, lease-protectedforkupdate afterremotecheck. Assignments docs-kernel-mode/reviews/pr2862-maintainer-fix-20261104/PLAN.md. No device/hardware/publicwrites yet; timer remainsdisabled.",
-      "checkpoint_at": "2026-11-04T13:12:33Z"
+      "checkpoint": "User-authorized #2862 rebase/fix pushed to original zxx0288 fork branch, final452d028f4 soleparentmain63ff; exact leases preserved author2b process-only advance privately. Preserved2856/2834/2866; fixed storage receipt lookup mutex race with actual RED/GREEN regression. 12 CPU CTest targets245pass+3 explicitHBGArgsDump skips, full102normalhooks pass, independentreview0Must/Should. Productdocs3EN/CNpairs6processpagesremoved; initial08b docCI2CNanchorsred repaired3lines, actualMkDocsstrict0, final452 docsCI41841309777 buildSUCCESS. CodeCI fullcurrenthead not yet established; prior08b running with precommitpass, no newhardware. PRbody baseline/validation/removedlinks corrected, Draft retained no merge. PrivateDELIVERY/INTEGRATION_REVIEW in docs-kernel-mode/reviews/pr2862-maintainer-fix-20261104; ROADMAP/HTML localupdated. No timerrestart or backup push.",
+      "checkpoint_at": "2026-11-04T13:50:23Z"
     }
   }
 }
