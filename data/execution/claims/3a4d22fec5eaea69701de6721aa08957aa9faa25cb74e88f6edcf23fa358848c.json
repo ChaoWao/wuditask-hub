@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Userasks enumerate localundeliveredcode+relationships. SameWDXactive. Rechecked12canonicalrefs/parents/statusallunchanged:11clean/1updatesdirty41,patch196527B/SHA4fd9af48unchanged. BRANCH_INVENTORY_RECHECK saved. Rechecked93relatedworktreesstatuses savedRELATED_WORKTREE_STATUS_RECHECK;preservehistory/dirty,no cleanup. Inventory actuallineages05b→0eef→90;8a28→bad5→68+otherworktreeWIP41;0e823→3eb→d544;7c→cffd→824→5d→fc4→492;ScopeoldArgschainalreadyincludesnotnewPMU/SW. HistoricalA5/e09variantsnotnewfeatures,2750f0f/evidence578/olderrorfixd89separate. FreshGHmain63ffeb8a8(#2866);2625OPENnew502857a3,2862DraftOPENnew3a1aa6b8,2750DraftOPENsamef0f. Newauthorheadsnotreviewedhere;oldfindingsnotautomaticallycurrent. PrivateINVENTORYactualbranchmapandPLANupdated;no Issueedit/publiccomment/productwrite/rebase/build/test/task/devicequery/push/cleanup. Timerdisabled. Usergetsfullbranchlist/actualparentchains andmerge-dedupdirection,notfalsecountofPRsordeliveredmainfeatures.",
-      "checkpoint_at": "2026-11-04T12:37:11Z"
+      "checkpoint": "User authorized #2862 rebase/fix and removing all process/history from product docs, preserve concise matched current EN/CN. SameWDX active recheck passed after transient GH error; no acquire/takeover. Fork zxx0288/simpler design/native-capture-from-main maintainerCanModify=true head3a1 unchanged. Isolated newworktrees pr2862-main-docs-20261104 and pr2862-docs-current-20261104; existing author/dirty branches untouched. C owns rebase preserve2856/2834/2866 onactualmain63ff; D owns docs/native*+mkdocs only in separatetree; root integrates verifies192priorCPU tests notnewheadapproval, hooks normal, lease-protectedforkupdate afterremotecheck. Assignments docs-kernel-mode/reviews/pr2862-maintainer-fix-20261104/PLAN.md. No device/hardware/publicwrites yet; timer remainsdisabled.",
+      "checkpoint_at": "2026-11-04T13:12:33Z"
     }
   }
 }
