@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Confirmed PR2625 merged f240c8367f9ee6b25884b43b3ba8b081b7caee6e=currentmain; reviewedsourcecc75unchanged. Full review/evidence docs-kernel-mode/reviews/pr2625-review-20261105/REVIEW.md: Standards0/Spec0;actualheadCI13success2skip,A3raw103passincl5newcapture,CPU458/458,fresh2archrecon2/2. ROADMAP+HTML+RESUME updated locally to mergedTMR/sharedmultinode,all46HTMLlinks/statusverified. No longer waiting2625. PR2906 remainsOPEN92efa all executedCIpassed,userreviewpending. ScopeStatsTMRcaptureaggregate remains proposalnotimplemented nowparentmerged; frameworkcapture checkedteardown gap and2776Draftconflicting eagernativebridge authorwork separate. Previous checkpoint/RESUME preserves actual2906task+hash proof,2776comments6654551103/6655744756. No runningchildren/builds/hardware,no productedits/push/timer/merge/close/assignment.",
-      "checkpoint_at": "2026-11-05T11:09:27Z"
+      "checkpoint": "PR2906 confirmed merged2f084c70bf28f6adc4d240eec7aa62b4837682bb=currentmain; all4mergedfileblobs exactlymatch reviewed/tested92efa. No longer pendinguserreview. PR2625mergedf240c8367. A3nativeTMR/HBG commoncapture+multinode andHBGretainedmodels/persistentINOUT landed; original singleA3task/hash+allcurrentheadCI evidence preserved,notnewmergehardwareclaim. ROADMAP+HTML+INVENTORYcurrentstatussupplement+RESUME updatedlocally;45HTMLlinks/statusverified. Olddirtybranches/frozenreceiptsuntouched,notrescannedorremoved. ScopeStatsnextTMRcaptureproposal stillnotstarted; unmergedparentdependencyresolved. Frameworkcapturecheckedteardown gap and2776Draftnativeeagerauthorwork remainseparate. No productedits/codepush/hardware/timer/merge/reassign/newagents. Fullpriorreview docs-kernel-mode/reviews/pr2625-review-20261105/REVIEW.md; recovery reviews/mainline-after-2862-20261105/RESUME.md.",
+      "checkpoint_at": "2026-11-05T12:44:23Z"
     }
   }
 }
