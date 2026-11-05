@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "User approved rejectV1/_v2 and preserve useful fdea fixes, repairSIMevidence+EN/CNlifetime. Newlocalbranchfix/pr2862-single-api-20261104 in exclusivepr2862-main-docs tree atauthorfdea66531 parentlatestmain63ff (remoteconfirmed), old452refs preserved. Csole src/python/tests writer removesversioncompat/retainsfixes/addsSIMevidence regression and currentCIerrorpredicate; Ddisjoint6docs writer preservescleanup+updatescontract; BreadonlySDKpredicateanalysis thenindependentreview. Assignmentsprivate reviews/pr2862-contract-fix-20261104/PLAN.md beforedispatch. No device/query/task/publicwrite yet; exactauthorlease beforepush; timerdisabled/no newPR or merge.",
-      "checkpoint_at": "2026-11-05T00:53:06Z"
+      "checkpoint": "User-approved #2862 singleAPI correction pushed81e3cea59 soleparentmain63ff using exactfdea lease; author useful close/reset/SIMcohort/helpers and our racefix/tests retained. Removed V1/upgraders/prepare_run_v2/run_v2, all consumers current layout; two SIM autoACK removed, no new protocol; precise EN/CN lifetime confirmedreset plus actual consumption even close error. 110 featurefiles,1commit clean,43 finalblobs=SOURCE2fea9738a, independentreview0Must/Should bound81e3. Final rebuilt7CTest211pass+3explicitHBGArgsDumpSkip; initialstale5excluded; ownnativePython246pass24HWdeselect; actualdriver/probe syntax0(notRTS), strictMkDocs0, full110normalhooks0+amend0. No device/task/newhardware/fullSIMdrain execution. PRbody corrected preserving historical author qualification; localROADMAP/HTMLupdated,no backup. Current81e3 docsCI41946851068 SUCCESS; codeCI41946850943 in_progress,not allgreen; Draft retained,no merge/Ready. Evidence private docs-kernel-mode/reviews/pr2862-contract-fix-20261104/DELIVERY.md. C/D/B allSTOP,no activecompiler,no timer. Next read current CI real errors; no automatic global task resume.",
+      "checkpoint_at": "2026-11-05T01:16:25Z"
     }
   }
 }
