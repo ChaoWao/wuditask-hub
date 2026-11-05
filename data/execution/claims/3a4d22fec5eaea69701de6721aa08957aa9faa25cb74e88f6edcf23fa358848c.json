@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "#2862 latest A3scene attempt2 job126997620256 completedFAILURE, diagnosed from full raw log: task20170229837 submitted02:00:14UTC, acquired4-7 at02:23:12, client--timeout1800 expired02:30:30. Queue23min leaves7minexecution;154resourcejobs planned,96childrencompleted (77pytestpass+19skip), zeroobservedfailed/hung; newchild02:30:27. Not evidencedkernelhang, corpusincomplete, no blanketCIpass. --max-time1800 is separateexecution watchdog; do notraise device timeouts. Existing2843 fixes only framework wait, not A3scene workflow. No productsourcechange/newhardwaretask/reset/rerun thisturn. Rawlog+anchors+REPORT updated in docs-kernel-mode/reviews/pr2862-ci-a5-init-20261104. Earlier one-shot waiter2798400 actuallystopped01:47:42 readonlyGETtimeout beforeanyPOST; notrunning, attempt2 notours. A5fork/TSD root remainsunresolved; claimactive.",
-      "checkpoint_at": "2026-11-05T02:57:44Z"
+      "checkpoint": "User explicitly invoked simpler create-issue for A3 queue-budget failure. Created bug#2887 https://github.com/hw-native-sys/simpler/issues/2887 with exactbodyreadback, noassignee. Captured attempt2 job126997620256 submit02:00 lock02:23 clientexpiry02:30,77actualpass+19skip, no observedhungcase, incompletecorpus. Maincae0f728 still has ordinary/SDMA/fault timeout1800=max-time1800. Issue separates finite queue/client/execution/outerjob budgets, preserveswatchdogs/isolation/exitcodes, requires delayedstart CPUregression and A3qualification. Related2843frameworkonly,2849,1772,2740; independent dedup read-onlyagent returnedRELATED noexactduplicate. Evidence/body/readback in docs-kernel-mode/reviews/pr2862-ci-a5-init-20261104. Noproductedits/newhardware/tasks/restarts. A5TSDrootstillunresolved.",
+      "checkpoint_at": "2026-11-05T03:07:56Z"
     }
   }
 }
