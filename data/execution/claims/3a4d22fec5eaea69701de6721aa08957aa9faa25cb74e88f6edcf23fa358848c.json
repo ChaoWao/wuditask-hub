@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "User-authorized #2862 rebase/fix pushed to original zxx0288 fork branch, final452d028f4 soleparentmain63ff; exact leases preserved author2b process-only advance privately. Preserved2856/2834/2866; fixed storage receipt lookup mutex race with actual RED/GREEN regression. 12 CPU CTest targets245pass+3 explicitHBGArgsDump skips, full102normalhooks pass, independentreview0Must/Should. Productdocs3EN/CNpairs6processpagesremoved; initial08b docCI2CNanchorsred repaired3lines, actualMkDocsstrict0, final452 docsCI41841309777 buildSUCCESS. CodeCI fullcurrenthead not yet established; prior08b running with precommitpass, no newhardware. PRbody baseline/validation/removedlinks corrected, Draft retained no merge. PrivateDELIVERY/INTEGRATION_REVIEW in docs-kernel-mode/reviews/pr2862-maintainer-fix-20261104; ROADMAP/HTML localupdated. No timerrestart or backup push.",
-      "checkpoint_at": "2026-11-04T13:50:23Z"
+      "checkpoint": "User approved rejectV1/_v2 and preserve useful fdea fixes, repairSIMevidence+EN/CNlifetime. Newlocalbranchfix/pr2862-single-api-20261104 in exclusivepr2862-main-docs tree atauthorfdea66531 parentlatestmain63ff (remoteconfirmed), old452refs preserved. Csole src/python/tests writer removesversioncompat/retainsfixes/addsSIMevidence regression and currentCIerrorpredicate; Ddisjoint6docs writer preservescleanup+updatescontract; BreadonlySDKpredicateanalysis thenindependentreview. Assignmentsprivate reviews/pr2862-contract-fix-20261104/PLAN.md beforedispatch. No device/query/task/publicwrite yet; exactauthorlease beforepush; timerdisabled/no newPR or merge.",
+      "checkpoint_at": "2026-11-05T00:53:06Z"
     }
   }
 }
