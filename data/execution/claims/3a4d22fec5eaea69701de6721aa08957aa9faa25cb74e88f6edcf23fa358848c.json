@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "User-approved #2862 singleAPI correction pushed81e3cea59 soleparentmain63ff using exactfdea lease; author useful close/reset/SIMcohort/helpers and our racefix/tests retained. Removed V1/upgraders/prepare_run_v2/run_v2, all consumers current layout; two SIM autoACK removed, no new protocol; precise EN/CN lifetime confirmedreset plus actual consumption even close error. 110 featurefiles,1commit clean,43 finalblobs=SOURCE2fea9738a, independentreview0Must/Should bound81e3. Final rebuilt7CTest211pass+3explicitHBGArgsDumpSkip; initialstale5excluded; ownnativePython246pass24HWdeselect; actualdriver/probe syntax0(notRTS), strictMkDocs0, full110normalhooks0+amend0. No device/task/newhardware/fullSIMdrain execution. PRbody corrected preserving historical author qualification; localROADMAP/HTMLupdated,no backup. Current81e3 docsCI41946851068 SUCCESS; codeCI41946850943 in_progress,not allgreen; Draft retained,no merge/Ready. Evidence private docs-kernel-mode/reviews/pr2862-contract-fix-20261104/DELIVERY.md. C/D/B allSTOP,no activecompiler,no timer. Next read current CI real errors; no automatic global task resume.",
-      "checkpoint_at": "2026-11-05T01:16:25Z"
+      "checkpoint": "#2721 argument design supplement published with explicit user authorization: body shared-contract section plus detailed comment6647054713. Covers Buffer/Tensor/TaskArgs separation, canonical Tensor(buffer,shapes) API, orthogonal location/grant/transfer, Remote/MAP/COPY, completion/lifetime, Program eager and Kernel capture boundary, scalar/MTP, source-pinned current foundations. Keeps#2460 sole implementation parent and existing track responsibilities/children. REST readback exact; title/state/labels/assignees unchanged. No product edits or tests/hardware. Private evidence docs-kernel-mode/reviews/issue2721-args-supplement-20261104. Previous#2862 repair81e3 remains pushed with docsCIgreen/codeCI lastinprogress, no new monitoring/timer/merge.",
+      "checkpoint_at": "2026-11-05T01:31:08Z"
     }
   }
 }
