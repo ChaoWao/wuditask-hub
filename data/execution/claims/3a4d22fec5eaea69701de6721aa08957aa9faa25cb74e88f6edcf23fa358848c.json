@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "082 accepted local081 coldconsumer23paths and Qwen080f106 rollback; 083 normalSDK runtime/callables compile14rc0 with2415inputguards. 086 firstTMR reached import thenSIGSEGV; originalcore proves pybindget_type_info NULL beforeSimpler; 091 registry1014/1016 mismatch and092 CPU2arm reproduces -11 vsPASS. No furtherdevice tasks. 088 Qwenactualvendoradapter compiled and090reviewPASS. 2941/2947/2948 current13CIgreen awaitusermerge. Preparing normalvendor registry-match correction inisolatedsource/cache; old026/035/036/081 frozen. 084 compactasync observation design pending. Current E/wake-delivery-082 andROADMAP/HTML; sameidle1800timer nochange.",
-      "checkpoint_at": "2026-11-07T16:47:27Z"
+      "checkpoint": "Wake082 actual: main2fe; OPEN2947a280/2941f25/2948onebe currentCI SUCCESS/noactionablefeedback,norerun. Root accepted094 normalcommit d5f1cde43 parentfe2d clean23blobs exactSOURCE011,97CPU/25subset/096indepPASS/normalhooks,dependent2947+070+076+vendorState notindependentPR/fullSDK.086 unique actualSDK taskSIGSEGV beforeSimpler during torch_npu Backendtype registration; originalcore+092 pureCPU tags1014SIGSEGV/1016PASS causallyclassifiespybindmismatch,nomodel/coldPASS,nothirdtask.093 D normalnewsource fullvendorbuild forwardsTorch3tags;224/1082at17:14:35,original17:21UTC harddeadline/noextension/nocoreELFyet. C097 privatefamilymatchingconfigurationonly,nobuild/loaduntilcore0+rootrelease. SameexternalQwenthread095 HBGProgramServing config+realengineCPUharness,first120stimeoutpreserved/notaccepted;2948/f106/oldauthorsuntouched.088 normalPyPTOadapterELF buildaccepted/noSDKload. Oldsources/evidencefrozen; noextraNPU/upstreampush/merge/Issueclose/backup.ROADMAPactualHTMLcurrent;state/evidence after-pmu-merge-20261106/wake-delivery-082/WAKE_FINAL_LOCAL_STATE.json. OriginalsameWDXactive,oneidle1800timerunchanged,no forcedwake.084aggregateobservercontractproposedonly/2Nwithdrawn.",
+      "checkpoint_at": "2026-11-07T17:17:00Z"
     }
   }
 }
