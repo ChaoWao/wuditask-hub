@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "114 current: Serving308 a18 pushed fork normalhooks+independentreview; CI Setup+45CPU success, accuracy task canceled pending after1200s no device, A5queued; no rerun. Qwenlocal1b276 parent2948 accepted33CPU/current1f25/391b+Serving a18, no push/sixcell. New normalTorch vendorfamily core1082/1082+matched_C/ATB+bridge/703package/staticproviders accepted, no native SDKload yet. Primary134 source-routingpassed but missingSymPy beforevendor native load; lockreleased.137/138 normalown094Pythonclosure fixed inclfsspec2026.4/datasets; actualCPUchain0, original151+source/binaries unchanged, root rehashed83evidence/4658newfiles. D139prepares revisedenvpacket, A140independentreview, no taskrelease yet; C142source-only dynamicresource successor. Original086crash/134fail/unknownA5/507046 retained. SameWDXactive; ROADMAP/render updated; no timerchange/extraA5/upstream/merge/backup.",
-      "checkpoint_at": "2026-11-07T21:21:05Z"
+      "checkpoint": "114 actual update: originalWDXactive; main2fe/open70 unchanged;2941f25/2947a280/2948onebe OPEN CI success;308a18 CPU45/setup success but accuracy queue1200 canceled unassigned; no rerun. Qwen local1b276 parent2948+308 current33CPU, no sixcell. Normalvendor704/ed52d5fbinding/016bbridge built;150 realpublicCPUguard gitHEAD=d5f pass,151/152reviewaccepted. Sole153 task8966047633 device0 failed107030 GLOBAL synchronous arenaH2D24658944B, prepare-1000; actualall7products loaded, no replay/numeric pass, lockreleased; raw frozen153REPORT007 rootread53files. A154 actualbotharch/commonpublication repair plan active, no sourcewrites/tasks. C146 real5node/default2slot and callerledger RED-to-GREEN; correcting existingledger/reference identity and lane occupancy, no newowner/API/ABI; zeroidentity writer regression foundroot andfixed; finalCPUregression in progress, not committed. D153 stopped; no extra hardware; no timer/upstream/merge/backup. ROADMAP/HTML refreshed actualstage; continue154plan->isolatedcompletefix plus146finalreview.",
+      "checkpoint_at": "2026-11-07T22:22:35Z"
     }
   }
 }
