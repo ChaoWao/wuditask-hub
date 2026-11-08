@@ -1,0 +1,19 @@
+{
+  "actor_id": "26245345",
+  "task_id": "PR_kwDORCBKLM8AAAABNgtnXQ",
+  "current": "WDX-A5760A32EDC3408B9D915EA8",
+  "runs": {
+    "WDX-A5760A32EDC3408B9D915EA8": {
+      "actor_id": "26245345",
+      "login": "ChaoWao",
+      "task_id": "PR_kwDORCBKLM8AAAABNgtnXQ",
+      "url": "https://github.com/hw-native-sys/simpler/pull/2948",
+      "environment": "ec879f7c149b43f5976c316bc381c277",
+      "session": "4bb190c40acb4ace99c2fd48fe5f1de6",
+      "run_id": "WDX-A5760A32EDC3408B9D915EA8",
+      "state": "active",
+      "acquired_at": "2026-11-08T07:52:52Z",
+      "receipts": {}
+    }
+  }
+}
