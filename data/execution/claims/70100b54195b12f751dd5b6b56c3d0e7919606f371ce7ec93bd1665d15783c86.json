@@ -34,7 +34,9 @@
       "run_id": "WDX-2971A5E1B0F847039DFEAC18",
       "state": "active",
       "acquired_at": "2026-11-08T08:08:49Z",
-      "receipts": {}
+      "receipts": {},
+      "checkpoint": "Resumed #2948. Dedicated source worktree pypto/.claude/worktrees/qwen-2948-source-stack at 9e28e61b; pinned Simpler 391b2fbc and pto-isa f83d4b7, PTOAS v0.72 official digest verified. Source build in progress. Existing Serving eight-token Qwen3-14B guard and tokenizer preflight available for bounded single A3 smoke. Full 128-token oracle pending.",
+      "checkpoint_at": "2026-11-08T08:14:18Z"
     }
   }
 }
