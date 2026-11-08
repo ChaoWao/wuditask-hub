@@ -13,7 +13,9 @@
       "run_id": "WDX-A5760A32EDC3408B9D915EA8",
       "state": "active",
       "acquired_at": "2026-11-08T07:52:52Z",
-      "receipts": {}
+      "receipts": {},
+      "checkpoint": "Serving 61b350e isolated worktree test/qwen-program-request-acceptance-2948. Ported TMR gate and reference contract, wired CPU and existing hardware guard, running CPU checks. Simpler #2948 remains untouched; real reference and hardware qualification pending.",
+      "checkpoint_at": "2026-11-08T07:59:03Z"
     }
   }
 }
