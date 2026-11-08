@@ -56,8 +56,8 @@
       "state": "active",
       "acquired_at": "2026-11-08T08:57:01Z",
       "receipts": {},
-      "checkpoint": "18:00 CST in-conversation checkpoint. Serving migration 58eeb4ec6, 99 CPU, real 14B eight-token TMR/HBG smokes. One diagnostic TMR request matched 128 tokens without reference substitutions and read all 40 KV layers across a page boundary. HBG one 128 match, separate rerun and 16-row cohort diverged at token 61. HBG serialized prefill avoids the prior 38.30 GB graph allocation error. Native vLLM eight-token smoke passed in isolated 0.20.2/0.20.2rc1 env; real Kernel artifacts built for TMR/HBG with KV InOut, two real decode probes running. Capture and all strict cohort qualifications remain pending. No upstream product changes.",
-      "checkpoint_at": "2026-11-08T10:03:03Z"
+      "checkpoint": "18:30 CST in-conversation checkpoint. Serving migration 58eeb4ec6 and Program evidence preserved. Same-worker TMR two-round readback confirms prompt KV varies at prefill before first decode; per-round prompt bytes remain unchanged across first decode. Real vLLM TMR/HBG Kernel eager both pass eight-token smoke with seven decode dispatches. Single-row TMR 128 pass once, TMR repeat and HBG at token 61, native vLLM at token 11. Both 16-row attempts preserved, initial mixed admission corrected with existing sleep/enqueue/wake. Capture has independent Simpler 3cda7a35 A3 wheel, vLLM ACLGraphWrapper single-bucket probe and official Torch-NPU 2.10 graph-owner port db6f055a compiling. No upstream product changes.",
+      "checkpoint_at": "2026-11-08T10:30:55Z"
     }
   }
 }
