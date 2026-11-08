@@ -55,7 +55,9 @@
       "run_id": "WDX-8E04C8E59CED4C1D8DB64A93",
       "state": "active",
       "acquired_at": "2026-11-08T08:57:01Z",
-      "receipts": {}
+      "receipts": {},
+      "checkpoint": "30-minute local controller active, first tick 17:30 CST. See Serving worktree outputs/qwen-2948/progress.txt. Independent CPU BF16 128-token reference frozen. A3 B-TMR 16-request and single-request cases both diverge first at token 45: NPU 2989 vs CPU BF16 279, CPU FP32 fixed-prefix chooses 2989. HBG #308 isolated candidate 36 CPU passes; real Qwen prefill codegen rejects mixed HOST/DEVICE tensor arguments. Next local tick captures actual TMR logits or isolates HBG control args.",
+      "checkpoint_at": "2026-11-08T09:10:36Z"
     }
   }
 }
