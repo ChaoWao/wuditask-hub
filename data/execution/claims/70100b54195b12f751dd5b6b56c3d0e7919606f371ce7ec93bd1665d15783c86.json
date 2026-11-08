@@ -1,7 +1,7 @@
 {
   "actor_id": "26245345",
   "task_id": "PR_kwDORCBKLM8AAAABNgtnXQ",
-  "current": "WDX-2971A5E1B0F847039DFEAC18",
+  "current": null,
   "runs": {
     "WDX-A5760A32EDC3408B9D915EA8": {
       "actor_id": "26245345",
@@ -32,11 +32,18 @@
       "environment": "ec879f7c149b43f5976c316bc381c277",
       "session": "df53e17a05bf4f6e810c228c5c0203cb",
       "run_id": "WDX-2971A5E1B0F847039DFEAC18",
-      "state": "active",
+      "state": "released",
       "acquired_at": "2026-11-08T08:08:49Z",
       "receipts": {},
-      "checkpoint": "Resumed #2948. Dedicated source worktree pypto/.claude/worktrees/qwen-2948-source-stack at 9e28e61b; pinned Simpler 391b2fbc and pto-isa f83d4b7, PTOAS v0.72 official digest verified. Source build in progress. Existing Serving eight-token Qwen3-14B guard and tokenizer preflight available for bounded single A3 smoke. Full 128-token oracle pending.",
-      "checkpoint_at": "2026-11-08T08:14:18Z"
+      "checkpoint": "Serving 58eeb4ec6. Built and verified pinned PyPTO 9e28e61b/Simpler 391b2fbc on CANN 9.0. 99 CPU tests passed. A3 real Qwen3-14B TMR eight-token request passed and device released (task_20261108_004618_227349825813). Saved proof in worktree outputs/qwen-2948/handoff.txt. Full frozen 128-token prompt/oracle remains outstanding, so PR decision and six-cell qualification remain pending.",
+      "checkpoint_at": "2026-11-08T08:14:18Z",
+      "released_at": "2026-11-08T08:50:17Z",
+      "disposition": "paused",
+      "finish": {
+        "checkpoint": "Serving 58eeb4ec6. Built and verified pinned PyPTO 9e28e61b/Simpler 391b2fbc on CANN 9.0. 99 CPU tests passed. A3 real Qwen3-14B TMR eight-token request passed and device released (task_20261108_004618_227349825813). Saved proof in worktree outputs/qwen-2948/handoff.txt. Full frozen 128-token prompt/oracle remains outstanding, so PR decision and six-cell qualification remain pending.",
+        "outcome": "paused"
+      },
+      "stop_verified": false
     }
   }
 }
