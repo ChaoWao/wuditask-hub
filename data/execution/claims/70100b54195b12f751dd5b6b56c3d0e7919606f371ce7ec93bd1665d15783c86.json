@@ -1,7 +1,7 @@
 {
   "actor_id": "26245345",
   "task_id": "PR_kwDORCBKLM8AAAABNgtnXQ",
-  "current": null,
+  "current": "WDX-8E04C8E59CED4C1D8DB64A93",
   "runs": {
     "WDX-A5760A32EDC3408B9D915EA8": {
       "actor_id": "26245345",
@@ -44,6 +44,18 @@
         "outcome": "paused"
       },
       "stop_verified": false
+    },
+    "WDX-8E04C8E59CED4C1D8DB64A93": {
+      "actor_id": "26245345",
+      "login": "ChaoWao",
+      "task_id": "PR_kwDORCBKLM8AAAABNgtnXQ",
+      "url": "https://github.com/hw-native-sys/simpler/pull/2948",
+      "environment": "ec879f7c149b43f5976c316bc381c277",
+      "session": "321137951d9545c4b088c959299d3c5a",
+      "run_id": "WDX-8E04C8E59CED4C1D8DB64A93",
+      "state": "active",
+      "acquired_at": "2026-11-08T08:57:01Z",
+      "receipts": {}
     }
   }
 }
