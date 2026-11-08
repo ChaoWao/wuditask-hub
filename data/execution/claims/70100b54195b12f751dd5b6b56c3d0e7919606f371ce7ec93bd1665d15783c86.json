@@ -56,8 +56,8 @@
       "state": "active",
       "acquired_at": "2026-11-08T08:57:01Z",
       "receipts": {},
-      "checkpoint": "30-minute local controller active, first tick 17:30 CST. See Serving worktree outputs/qwen-2948/progress.txt. Independent CPU BF16 128-token reference frozen. A3 B-TMR 16-request and single-request cases both diverge first at token 45: NPU 2989 vs CPU BF16 279, CPU FP32 fixed-prefix chooses 2989. HBG #308 isolated candidate 36 CPU passes; real Qwen prefill codegen rejects mixed HOST/DEVICE tensor arguments. Next local tick captures actual TMR logits or isolates HBG control args.",
-      "checkpoint_at": "2026-11-08T09:10:36Z"
+      "checkpoint": "Working continuously in the original conversation. Detached local controller stopped at 17:13 CST. Serving migration 58eeb4ec6 and 99 CPU tests verified. Real A3 TMR and one-active HBG Qwen3-14B eight-token smokes passed. TMR 16-request full-length FP32 comparison first diverges at token 61, with KV rerun active. Single-active HBG full-length comparison active. Kernel isolated worktree at ab20e0d2d, existing stage-0 vLLM environment and artifacts under verification. No upstream product changes.",
+      "checkpoint_at": "2026-11-08T09:34:42Z"
     }
   }
 }
