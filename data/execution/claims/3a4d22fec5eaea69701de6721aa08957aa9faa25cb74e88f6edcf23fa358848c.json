@@ -14,8 +14,8 @@
       "state": "active",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "Delivered PR2950 49bcabb30 main2fe 17files:508CPP/8skip,4probes,8HOST+AICPU,independentreview/hooks; PR2949 cb13CIgreen. Private20af integrated, normal179 exactruntime/binding+publicCPUguard and180 new704vendorpackage/bridge+103ELFstaticclosure accepted; noSDKpass.181design fixed editable shadow usingbinding-only dir;183 boundedreview pending then packetpreparation,noNPU.182 Qwen actualcallerstream correction accepted,184 concrete same-owner observerhandoff design underway. ROADMAP/HTML updated oneSVG70uniqueIDs. Evidence docs-kernel-mode/reviews/parallel-after-2906-20261105/after-pmu-merge-20261106/wake-mainline-167. SameWDX active,no takeover/timerchange/extra device.",
-      "checkpoint_at": "2026-11-08T02:17:32Z"
+      "checkpoint": "PR2950 current70317f5e8 delivered, 13 actual CI SUCCESS, zero inline/thread blockers; old49bc actual UT assertion failure reproduced/fixed187 and independent189 retained. Sole current SDK task task_20261107_185750_299737832694 device0 terminal0/lockreleased: first A3 TMR queue1 GLOBAL singlegraph/node poison-no-compute,3 numerical replays5/10/22+10/20/44,checkedresetclose actual PASS; root read raw/maps and independent193 fullreport accepted ROOT192_SDK_ACCEPTANCE048. queue1 TensorImpl lifetime unobserved; no HBG/A5/manynode/Qwen/faultrecovery qualification or extra task. 196 exact coldsource/vendor delivery inventory rootread; A197 now isolated current2947/49/50 union convergence, preserve new regressions/dependencies, no frozen20af/vendor changes.194 revised rc0-only sameowner observer/freshCID design195 independentPASS rootread; next integrated eager implementation on ownbranch, actualconsumer required. Docs ROADMAP/HTML updated, original journals/timer unchanged. Evidence docs-kernel-mode/reviews/parallel-after-2906-20261105/after-pmu-merge-20261106/wake-mainline-167/.",
+      "checkpoint_at": "2026-11-08T03:21:56Z"
     }
   }
 }
