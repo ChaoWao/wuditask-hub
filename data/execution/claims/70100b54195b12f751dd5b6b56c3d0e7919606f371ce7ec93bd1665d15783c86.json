@@ -56,8 +56,8 @@
       "state": "active",
       "acquired_at": "2026-11-08T08:57:01Z",
       "receipts": {},
-      "checkpoint": "2026-11-09 09:25 北京时间。本对话首个30分钟检查点已触发。独占 Serving 037b2d3 修复 KV 抢占恢复丢弃已输出后缀，222 项相关 CPU 和五项 hooks 通过，同步/异步负控在旧提交失败。真实 A3 原卡同221页，TMR 从22/32修复至32/32，HBG 329页复跑32/32。新本地3338-token等长输入由独立CPU FP32和原生vLLM产生一致128 token，两轮16路六格各32/32。已提交HEAD复跑采集实际抢占次数。原封存 prompt/fixture仍缺，#2948 OPEN draft，产品仓本地推进。证据在独占 Serving outputs/qwen-2948/progress.txt 和 handoff.txt。",
-      "checkpoint_at": "2026-11-09T01:26:00Z"
+      "checkpoint": "2026-11-09 09:55 北京时间，本对话第二个30分钟检查点09:54:54已触发。按用户确认采用新独立CPU FP32 3338-token基线，原生128 token一致，六格两轮16路各32/32。真实取消、40层127新KV槽回读、旧前缀未写区检查和单卡顺序请求时延全部完成，任务已释放卡。Serving 037b2d3 在同221页实测16次抢占，仍32/32；完整Serving CPU 438 passed。本地矩阵、KV、时延和复跑命令见独占Serving outputs/qwen-2948。产品PR保持本地评审。",
+      "checkpoint_at": "2026-11-09T01:55:51Z"
     }
   }
 }
