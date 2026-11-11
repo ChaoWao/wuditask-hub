@@ -1,7 +1,7 @@
 {
   "actor_id": "26245345",
   "task_id": "I_kwDORCBKLM8AAAABZCx1Wg",
-  "current": "WDX-7E51A22B124E4950871E1644",
+  "current": null,
   "runs": {
     "WDX-7E51A22B124E4950871E1644": {
       "actor_id": "26245345",
@@ -11,11 +11,18 @@
       "environment": "ec879f7c149b43f5976c316bc381c277",
       "session": "b4082b1b33d44f6c9bde039ebc0c4a0f",
       "run_id": "WDX-7E51A22B124E4950871E1644",
-      "state": "active",
+      "state": "released",
       "acquired_at": "2026-10-27T05:55:07Z",
       "receipts": {},
-      "checkpoint": "PR2993 merged7f381765 at main0f6fd790; complete tracked-main macro audit SIMPLER_TEST_A5_RESIDENT zero. CI43003659554 completed success; root consumed native/framework raw logs actual checkout f1cef83780ceab9bec8478ca8006a8d29b4e0ed8: native capture22PASS/unrelatedA5URMA1SKIP; framework63PASS; native cards4-7/framework8 lockrelease observed. ROOT_CI_LOG_OUTCOME.json and logs at /tmp/simpler-resident-adapters-delivery.22knqiyy. Normal7fA5package/source independent acceptance retained; no7f/currentmainA5device run, olddaaca2PASS retains exactversion, hardwaregrants fully consumed. All original agents completed/no new dispatch. Latestmain0f, PR2924merged1580/head9e; fixed stale2924 row, ROADMAP actualHTML updated. Simpler core implementations merged; broaderC4 qualification not declaredcomplete, PyPTO/business/DFX outside scope. No newbuild/task/rerun/push/merge/close/cronchange. Same originalWDXactive check via installedCLI; preserve source/errors and no takeover.",
-      "checkpoint_at": "2026-11-11T11:29:40Z"
+      "checkpoint": "Completed only the user-tightened Simpler core scope: continuous Kernel eager and framework capture/replay under original Torch graph owner, normal installation runtime assets, native A3/A5 feature alignment, source reviews and actual CI. PR2952/2972/2976/2990/2993 and related protection/environment PRs merged; currentmain0f6fd790, removed SIMPLER_TEST_A5_RESIDENT matches0. CI43003659554success; root rawnative22/framework63PASS actualf1cef837/locksreleased. Normal7fA5package verified. User expressly accepts no final7fA5two-case rerun, futurePRCI will cover; olddaacaA5evidence stays exactversion. No remaining action for these two deliverables. BroaderC4allparams/capacity/DFX/performance unqualified and outside scopedcompletion; PyPTO/businessmigration/URMA separatelyowned not resumed. All originalagents completed, no known root-owned active source/build/device tasks. User-authorized completion cleanup performed: disabled marker written, exactlyone designatedprogress-wake cron removed, allothercron preserved; receipt /tmp/simpler-resident-adapters-delivery.22knqiyy/SCOPED_COMPLETION.json. ROADMAP/renderedHTML+PLAN updated. ParentIssue2666 remainsOPEN; no automaticmerge/close/assignment/upstreampush. Preserve frozen source/dirty/logs/originalunknownfailures. End same original execution as completed, no takeover/newagent.",
+      "checkpoint_at": "2026-11-11T11:29:40Z",
+      "released_at": "2026-11-11T11:36:47Z",
+      "disposition": "completed",
+      "finish": {
+        "checkpoint": "Completed only the user-tightened Simpler core scope: continuous Kernel eager and framework capture/replay under original Torch graph owner, normal installation runtime assets, native A3/A5 feature alignment, source reviews and actual CI. PR2952/2972/2976/2990/2993 and related protection/environment PRs merged; currentmain0f6fd790, removed SIMPLER_TEST_A5_RESIDENT matches0. CI43003659554success; root rawnative22/framework63PASS actualf1cef837/locksreleased. Normal7fA5package verified. User expressly accepts no final7fA5two-case rerun, futurePRCI will cover; olddaacaA5evidence stays exactversion. No remaining action for these two deliverables. BroaderC4allparams/capacity/DFX/performance unqualified and outside scopedcompletion; PyPTO/businessmigration/URMA separatelyowned not resumed. All originalagents completed, no known root-owned active source/build/device tasks. User-authorized completion cleanup performed: disabled marker written, exactlyone designatedprogress-wake cron removed, allothercron preserved; receipt /tmp/simpler-resident-adapters-delivery.22knqiyy/SCOPED_COMPLETION.json. ROADMAP/renderedHTML+PLAN updated. ParentIssue2666 remainsOPEN; no automaticmerge/close/assignment/upstreampush. Preserve frozen source/dirty/logs/originalunknownfailures. End same original execution as completed, no takeover/newagent.",
+        "outcome": "completed"
+      },
+      "stop_verified": false
     }
   }
 }
