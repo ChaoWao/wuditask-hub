@@ -34,7 +34,9 @@
       "run_id": "WDX-33FD14C16068438A82D5D677",
       "state": "active",
       "acquired_at": "2026-11-12T01:10:49Z",
-      "receipts": {}
+      "receipts": {},
+      "checkpoint": "User explicitly authorized new execution for exactly three supplemental validation tracks. Active WDX-33FD14C16068438A82D5D677, previous WDX stays completed. Fixed main e151a2d5433fbc2acdfd21eca41afe3a7cca07c2, all open/draft PRs inspected and #3008/#2978/#2981 files checked for overlap. Reused native agents args_capture_review (A5 capture six diagnostics), scope_runtime (q1 TensorImpl and credible SDK-partial-destroy failure coverage), review_2776 (bounded capacity/recovery and unified performance); all confirmed running in exclusive trees. Exact assignments and prompts /tmp/simpler-2666-supplemental-20261112.9bctrpig/ASSIGNMENTS.json. Root reviews/integrates/publishes; no child external writes. No hardware budget yet, all previous grants consumed. Automatic wake stays disabled. No PyPTO/business/general update work. ROADMAP/renderedHTML+PLAN updated.",
+      "checkpoint_at": "2026-11-12T01:16:07Z"
     }
   }
 }
