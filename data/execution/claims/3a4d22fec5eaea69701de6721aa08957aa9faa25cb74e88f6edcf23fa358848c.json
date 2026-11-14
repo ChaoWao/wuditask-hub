@@ -1,7 +1,7 @@
 {
   "actor_id": "26245345",
   "task_id": "I_kwDORCBKLM8AAAABZCx1Wg",
-  "current": "WDX-5242552E164342198B1FD7B9",
+  "current": null,
   "runs": {
     "WDX-7E51A22B124E4950871E1644": {
       "actor_id": "26245345",
@@ -53,9 +53,17 @@
       "environment": "ec879f7c149b43f5976c316bc381c277",
       "session": "21d3cecf38074647bb147f61d6eebb83",
       "run_id": "WDX-5242552E164342198B1FD7B9",
-      "state": "active",
+      "state": "released",
       "acquired_at": "2026-11-14T04:30:30Z",
-      "receipts": {}
+      "receipts": {},
+      "released_at": "2026-11-14T04:34:29Z",
+      "disposition": "completed",
+      "checkpoint": "Completed only the explicit user-requested tracking-body update for issue2666. Fresh run5242552E, no takeover/revival; original runs remain released. Updated top board as of20261114 baseline81e02: coreSimpler and C4 PR3021/3056/3058 complete,2223 via3023closed,2923 fixed2963 andclosed. Preserve2773/2202open for current-main design reconciliation, independent2988 and2429/2715/2748business,2694closed-unmerged and2737performance; no new implementation or hardware requirements. Full folded history49190chars preserved byte-for-byte. PATCH body-only and immediate GET verified exact proposed SHA cb474ccaa5255b359a09067450948997cc1dd51f54adec95fff96884258bfcca,56005chars,updatedAt20261114T043152Z. OPEN,title,assignees,labels,milestone unchanged. Receipt /tmp/simpler-tracking-readback-20261114-uyn3n_0c/2666-update-receipt.json. No source/build/device/CI/wake/merge/close/assignment actions or agents. Stop this admin execution.",
+      "finish": {
+        "checkpoint": "Completed only the explicit user-requested tracking-body update for issue2666. Fresh run5242552E, no takeover/revival; original runs remain released. Updated top board as of20261114 baseline81e02: coreSimpler and C4 PR3021/3056/3058 complete,2223 via3023closed,2923 fixed2963 andclosed. Preserve2773/2202open for current-main design reconciliation, independent2988 and2429/2715/2748business,2694closed-unmerged and2737performance; no new implementation or hardware requirements. Full folded history49190chars preserved byte-for-byte. PATCH body-only and immediate GET verified exact proposed SHA cb474ccaa5255b359a09067450948997cc1dd51f54adec95fff96884258bfcca,56005chars,updatedAt20261114T043152Z. OPEN,title,assignees,labels,milestone unchanged. Receipt /tmp/simpler-tracking-readback-20261114-uyn3n_0c/2666-update-receipt.json. No source/build/device/CI/wake/merge/close/assignment actions or agents. Stop this admin execution.",
+        "outcome": "completed"
+      },
+      "stop_verified": false
     }
   }
 }
