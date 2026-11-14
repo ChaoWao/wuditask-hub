@@ -1,7 +1,7 @@
 {
   "actor_id": "26245345",
   "task_id": "I_kwDORCBKLM8AAAABZCx1Wg",
-  "current": "WDX-3CAE659306E4478F939B1E92",
+  "current": null,
   "runs": {
     "WDX-7E51A22B124E4950871E1644": {
       "actor_id": "26245345",
@@ -93,9 +93,17 @@
       "environment": "ec879f7c149b43f5976c316bc381c277",
       "session": "18dc0d818a8840f9becf62fbfd8ae893",
       "run_id": "WDX-3CAE659306E4478F939B1E92",
-      "state": "active",
+      "state": "released",
       "acquired_at": "2026-11-14T12:27:56Z",
-      "receipts": {}
+      "receipts": {},
+      "released_at": "2026-11-14T12:35:57Z",
+      "disposition": "completed",
+      "checkpoint": "Explicit user closure/reparent request completed.2666 CLOSED/COMPLETED at20261114T123029Z, no remaining scoped functional acceptance.2988 atomically replaceParent moved2666->top2670, remainsOPEN/assigneezxx0288, same design scope. Current parent and root9children confirmed GraphQL; oldparent4children excludes2988. Three bodies precisely updated/readback including2670 narrow latestnote/Kernelcompletedrow/new2988row/tree and2988 parenttext; preserve all other issue states/owners/labels/milestones and2666 folded history. FinalRESTlist timedout aftersuccessfulwrites, onlyreadonlyGraphQLretry performed, no duplicate mutation. Receipt /tmp/simpler-2666-close-2988-reparent-eeou665a/FINAL_RECEIPT.json. LocalROADMAP/PLAN and actual render-roadmap HTML synced closedstatus and2923 resolved; HTML anchors/IDs/C1-C4 delivered verified. Existing wake disabled marker present; no cron change, current unprivileged cronread PAMrefused, priorcleanupretained. No product source/build/tests/device/CI/merge/newagents/newimplementation.2773/2202 remain original owners for state/docs maintenance. Finish only this admin execution; do not auto resume.",
+      "finish": {
+        "checkpoint": "Explicit user closure/reparent request completed.2666 CLOSED/COMPLETED at20261114T123029Z, no remaining scoped functional acceptance.2988 atomically replaceParent moved2666->top2670, remainsOPEN/assigneezxx0288, same design scope. Current parent and root9children confirmed GraphQL; oldparent4children excludes2988. Three bodies precisely updated/readback including2670 narrow latestnote/Kernelcompletedrow/new2988row/tree and2988 parenttext; preserve all other issue states/owners/labels/milestones and2666 folded history. FinalRESTlist timedout aftersuccessfulwrites, onlyreadonlyGraphQLretry performed, no duplicate mutation. Receipt /tmp/simpler-2666-close-2988-reparent-eeou665a/FINAL_RECEIPT.json. LocalROADMAP/PLAN and actual render-roadmap HTML synced closedstatus and2923 resolved; HTML anchors/IDs/C1-C4 delivered verified. Existing wake disabled marker present; no cron change, current unprivileged cronread PAMrefused, priorcleanupretained. No product source/build/tests/device/CI/merge/newagents/newimplementation.2773/2202 remain original owners for state/docs maintenance. Finish only this admin execution; do not auto resume.",
+        "outcome": "completed"
+      },
+      "stop_verified": false
     }
   }
 }
